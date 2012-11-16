@@ -2078,7 +2078,7 @@ EOF;
 
             if ( $this->trellis->input['act'] != 'logout' && $_SERVER['QUERY_STRING'] ) $self .= '?'. $this->trellis->sanitize_data( $_SERVER['QUERY_STRING'] );
 
-            $this->add_sidebar_help( '{lang.login_title}', '{lang.random_text}' );
+            $this->add_sidebar_help( '{lang.login_title}', '{lang.login_msg}' );
 
             $html = <<<EOF
 {$error}
