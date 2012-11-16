@@ -277,10 +277,10 @@ class td_install {
 
         if ( $config_file )
         {
-            if ( ! is_writable( TD_PATH .'config.php' ) ) @chmod( TD_PATH .'config.php', 0777 );
+            if ( ! is_writable( TD_PATH .'config.php' ) ) @chmod( TD_PATH .'config.php', 0666 );
 
             $checks_html .= $this->check_row_start( 'Configuration File' );
-            $checks_html .= $this->check_row_end( is_writable( TD_PATH .'config.php' ), array( 'fail_msg' => 'Trellis Desk does not have permission to write to <i>'. TD_PATH .'config.php</i>. Please CHMOD this file to 0777.' ) );
+            $checks_html .= $this->check_row_end( is_writable( TD_PATH .'config.php' ), array( 'fail_msg' => 'Trellis Desk does not have permission to write to <i>'. TD_PATH .'config.php</i>. Please CHMOD this file to 0666.' ) );
         }
 
         $check_perms = array(
@@ -1357,10 +1357,10 @@ class td_install {
 
         $checks_html = "<table width='100%' cellpadding='0' cellspacing='0'>";
 
-        if ( is_writable( TD_PATH .'config.php' ) ) @chmod( TD_PATH .'config.php', 0755 );
+        if ( is_writable( TD_PATH .'config.php' ) ) @chmod( TD_PATH .'config.php', 0644 );
 
         $checks_html .= $this->check_row_start( 'Configuration File' );
-        $checks_html .= $this->check_row_end( ! is_writable( TD_PATH .'config.php' ), array( 'warn_msg' => 'Your configuration file is still writeable. We strongly recommend changing the permissions on <i>'. TD_PATH .'config.php</i> to 0755.' ) );
+        $checks_html .= $this->check_row_end( ! is_writable( TD_PATH .'config.php' ), array( 'warn_msg' => 'Your configuration file is still writeable. We strongly recommend changing the permissions on <i>'. TD_PATH .'config.php</i> to 0644.' ) );
 
         if ( $handle = @fopen( TD_INSTALL .'install.lock', 'w' ) )
         {
