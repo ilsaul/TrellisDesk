@@ -258,7 +258,7 @@ class td_install {
         {
             if ( ! $config_file_dist = file_exists( TD_PATH .'config.php.dist' ) )
             {
-                $checks_html .= $this->check_row_start( 'Configuration Filea' );
+                $checks_html .= $this->check_row_start( 'Configuration File' );
                 $checks_html .= $this->check_row_end( $config_file_dist, array( 'fail_msg' => 'Trellis Desk could not locate <i>'. TD_PATH .'config.php</i>. Please upload <i>config.php.dist</i> and rename it to <i>config.php</i>.' ) );
             }
             else
