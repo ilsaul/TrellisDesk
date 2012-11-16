@@ -223,7 +223,54 @@ class td_class_asession {
         # Compare Password
         #=============================
 
-        if ( hash( 'whirlpool', $mem['pass_salt'] . $this->trellis->input['password'] . $this->trellis->config['pass_key'] ) == $mem['pass_hash'] )
+        $user_allowed = 0;
+
+        if ( $this->trellis->config['ldap_enabled'] )
+        {
+            # LDAP
+            require_once "includes/adLDAP/src/adLDAP.php";
+
+            $ldap_options = array(
+                    "account_suffix" => $this->trellis->config['ldap_suffix'],
+                    "base_dn" => $this->trellis->config['ldap_base_dn'],
+                    "domain_controllers" => $this->trellis->config['ldap_servers'],
+                    "admin_username" => $this->trellis->config['ldap_bind_user'],
+                    "admin_password" => $this->trellis->config['ldap_bind_pass'],
+                    "use_ssl" => $this->trellis->config['ldap_ssl'],
+                    "use_tls" => $this->trellis->config['ldap_tls'],
+                    );
+
+            try
+            {
+                $ldap_connection = new adLDAP( $ldap_options );
+                $user_allowed = $ldap_connection->authenticate( $this->trellis->input['username'],$this->trellis->input['password'] );
+                if ( $user_allowed && $this->trellis->config['ldap_allowed_group'] )
+                {
+                    $user_allowed = $ldap_connection->user()->inGroup( $this->trellis->input['username'], $this->trellis->config['ldap_allowed_group'] );
+                }
+            } catch ( adLDAPException $e ) {
+                $this->trellis->log( array( 
+                            'msg' => $e,
+                            'type' => 'other',
+                            ) ); # LDAP Error
+            }
+
+            if ( $ldap_connection )
+            {
+                # Close the LDAP connection if it's open.
+                # It's possible there was an exception, so we do it outside the try/catch.
+                $ldap_connection->close();
+            }
+        }
+
+
+        if ( ! $user_allowed )
+        {
+            # Non-LDAP (Disabled or user not found/allowed)
+            $user_allowed = ( hash( 'whirlpool', $mem['pass_salt'] . $this->trellis->input['password'] . $this->trellis->config['pass_key'] ) == $mem['pass_hash'] );
+        }
+
+        if ( $user_allowed)
         {
             // Sub-Groups
             $mem['ugroup_sub'] = unserialize( $mem['ugroup_sub'] );

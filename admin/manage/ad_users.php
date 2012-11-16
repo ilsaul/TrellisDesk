@@ -464,11 +464,18 @@ class td_ad_users {
 
         ( $this->trellis->check_perm( 'manage', 'users', 'staff', 0 ) ) ? $ugroup_sub_acp = '&nbsp;&nbsp;'. $this->trellis->skin->checkbox( array( 'name' => 'ugroup_sub_acp', 'title' => '{lang.acp_access} '. $this->trellis->skin->help_tip('{lang.tip_acp_access}') ) ) : $ugroup_sub_acp = "";
 
+        /*
+            # For future LDAP support on the user page.
+        ( $this->trellis->$config['ldap_enabled'] ) ?  $ldap_user = $this->trellis->skin->group_table_row( '{lang.ldap_user}', $this->trellis->skin->checkbox( array( 'name' => 'ldap_user', 'title' => '{lang.ldap_user}'.$this->trellis->skin->help_tip('{lang.tip_ldap_user}' ) ) ) ) : $ldap_user = "";
+        */
+        $ldap_user = "";
+
         $this->output .= "<div id='ticketroll'>
                         ". $this->trellis->skin->start_form( "<! TD_URL !>/admin.php?section=manage&amp;page=users&amp;act=doadd", 'add_user', 'post' ) ."
                         ". $this->trellis->skin->start_group_table( '{lang.adding_user}', 'a' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.username}', $this->trellis->skin->textfield( 'name' ), 'a', '25%', '75%' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.email}', $this->trellis->skin->textfield( 'email' ), 'a' ) ."
+                        ". $ldap_user ."
                         ". $this->trellis->skin->group_table_row( '{lang.password}', $this->trellis->skin->textfield( 'password' ), 'a' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.title} '. $this->trellis->skin->help_tip('{lang.tip_title}'), $this->trellis->skin->textfield( 'title' ), 'a' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.group}', "<select name='ugroup' id='ugroup'>". $this->trellis->func->drop_downs->group_drop( array( 'select' => $this->trellis->input['ugroup'], 'staff_check' => 1 ) ) ."</select>", 'a' ) ."
@@ -656,11 +663,18 @@ class td_ad_users {
 
         ( $this->trellis->check_perm( 'manage', 'users', 'staff', 0 ) ) ? $ugroup_sub_acp = '&nbsp;&nbsp;'. $this->trellis->skin->checkbox( array( 'name' => 'ugroup_sub_acp', 'title' => '{lang.acp_access} '. $this->trellis->skin->help_tip('{lang.tip_acp_access}'), 'value' => $u['ugroup_sub_acp'] ) ) : $ugroup_sub_acp = "";
 
+        /*
+            # For future LDAP support on the user page.
+        ( $this->trellis->$config['ldap_enabled'] ) ?  $ldap_user = $this->trellis->skin->group_table_row( '{lang.ldap_user}', $this->trellis->skin->checkbox( array( 'name' => 'ldap_user', 'title' => '{lang.ldap_user}'.$this->trellis->skin->help_tip('{lang.tip_ldap_user}' ) ) ) ) : $ldap_user = "";
+        */
+        $ldap_user = "";
+
         $this->output .= "<div id='ticketroll'>
                         ". $this->trellis->skin->start_form( "<! TD_URL !>/admin.php?section=manage&amp;page=users&amp;act=doedit&amp;id={$u['id']}", 'edit_user', 'post' ) ."
                         ". $this->trellis->skin->start_group_table( '{lang.editing_user} '. $u['name'], 'a' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.username}', $this->trellis->skin->textfield( 'name', $u['name'] ), 'a', '25%', '75%' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.email}', $this->trellis->skin->textfield( 'email', $u['email'] ), 'a' ) ."
+                        ". $ldap_user ."
                         ". $this->trellis->skin->group_table_row( '{lang.password} '. $this->trellis->skin->help_tip('{lang.tip_change_password}'), $this->trellis->skin->textfield( 'password' ), 'a' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.title} '. $this->trellis->skin->help_tip('{lang.tip_title}'), $this->trellis->skin->textfield( 'title', $u['title'] ), 'a' ) ."
                         ". $this->trellis->skin->group_table_row( '{lang.group}', "<select name='ugroup' id='ugroup'>". $this->trellis->func->drop_downs->group_drop( array( 'select' => $ugroup, 'staff_check' => 1 ) ) ."</select>", 'a' ) ."
