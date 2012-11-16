@@ -107,7 +107,8 @@ $lang = array(
 'with_selected' => 'With selected:',
 'pagination' => 'Page %d of %d',
 
-'acp_title' => 'Trellis Desk | Administration Control Panel',
+
+'acp_title' => $this->cache->data['settings']['general']['hd_name'].' | Administration Control Panel',
 'default' => 'Default',
 'delete' => 'Delete',
 'description' => 'Description',
