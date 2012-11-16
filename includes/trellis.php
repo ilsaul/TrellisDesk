@@ -199,6 +199,11 @@ class trellis {
             $nameb = array( $nameb );
         }
 
+        if ( ! is_object( $this->func ) )
+        {
+            $this->func = new stdClass();
+        }
+
         while( list( , $name ) = each( $nameb ) )
         {
             if( ! $this->func->$name )
@@ -863,12 +868,12 @@ class trellis {
             if ( ! $this->cache->data['settings']['log']['nonacp'] ) return true;
         }
 
-        if ( ! $params['msg'] ) return false;
-        if ( ! $params['type'] ) return false;
+        if ( ! isset( $params['msg'] ) ) return false;
+        if ( ! isset( $params['type'] ) ) return false;
 
-        if ( ! $this->cache->data['settings']['log'][ $params['type'] ] ) return true;
+        if ( ! isset( $params['type'] ) && $this->cache->data['settings']['log'][ $params['type'] ] ) return true;
 
-        if ( ! $params['level'] ) $params['level'] = 1;
+        if ( ! isset( $params['level'] ) ) $params['level'] = 1;
 
         if ( is_array( $params['msg'] ) )
         {

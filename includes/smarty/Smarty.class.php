@@ -233,6 +233,10 @@ class Smarty extends Smarty_Internal_Data {
         $this->template_dir = array('.' . DS . 'templates' . DS);
         $this->compile_dir = '.' . DS . 'templates_c' . DS;
         $this->plugins_dir = array(SMARTY_PLUGINS_DIR);
+        if ( ! is_object( $this->cache ) )
+        {
+            $this->cache = new stdClass();
+        }
         $this->cache->data_dir = '.' . DS . 'cache' . DS;
         $this->config_dir = '.' . DS . 'configs' . DS;
         $this->debug_tpl = SMARTY_DIR . 'debug.tpl';

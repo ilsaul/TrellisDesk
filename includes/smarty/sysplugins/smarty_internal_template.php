@@ -85,6 +85,10 @@ class Smarty_Internal_Template extends Smarty_Internal_Data {
     {
         $this->smarty = &$smarty; 
         // Smarty parameter
+        if ( ! is_object( $this->cache ) )
+        {
+            $this->cache = new stdClass();
+        }
         $this->cache->data_id = $_cache_id === null ? $this->smarty->cache->data_id : $_cache_id;
         $this->compile_id = $_compile_id === null ? $this->smarty->compile_id : $_compile_id;
         $this->force_compile = $this->smarty->force_compile;
