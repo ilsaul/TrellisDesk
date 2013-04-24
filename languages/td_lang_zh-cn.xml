@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<language key="zh-cn" name="Chinese (Simplified)" version="20014000" exported="1366176693">
+<language key="zh_CN" name="Chinese (Simplified)" version="20014000" exported="1366176693">
   <file name="ad_lang_articles.php">
     <bit>
       <key>articles_list</key>
-      <value>Articles List</value>
+      <value>文章列表</value>
     </bit>
     <bit>
       <key>editing_article</key>
@@ -297,7 +297,7 @@
     </bit>
     <bit>
       <key>cache_news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>cache_pfields</key>
@@ -1941,7 +1941,7 @@
     </bit>
     <bit>
       <key>home</key>
-      <value>Home</value>
+      <value>主页</value>
     </bit>
     <bit>
       <key>hours_ago</key>
@@ -1965,7 +1965,7 @@
     </bit>
     <bit>
       <key>knowledge_base</key>
-      <value>Knowledge Base</value>
+      <value>知识库</value>
     </bit>
     <bit>
       <key>less_than_a_minute_ago</key>
@@ -1997,11 +1997,11 @@
     </bit>
     <bit>
       <key>my_account</key>
-      <value>My Account</value>
+      <value>我的帐户</value>
     </bit>
     <bit>
       <key>news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>no</key>
@@ -2029,7 +2029,7 @@
     </bit>
     <bit>
       <key>open_ticket</key>
-      <value>Submit A Ticket</value>
+      <value>提交工单</value>
     </bit>
     <bit>
       <key>password</key>
@@ -2085,7 +2085,7 @@
     </bit>
     <bit>
       <key>ticket_history</key>
-      <value>Ticket History</value>
+      <value>历史工单</value>
     </bit>
     <bit>
       <key>ticket_overview</key>
@@ -2529,7 +2529,7 @@
     </bit>
     <bit>
       <key>log_type_news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>log_type_kb</key>
@@ -3079,7 +3079,7 @@
     </bit>
     <bit>
       <key>knowledge_base</key>
-      <value>Knowledge Base</value>
+      <value>知识库</value>
     </bit>
     <bit>
       <key>knowledge_base_access</key>
@@ -3103,7 +3103,7 @@
     </bit>
     <bit>
       <key>news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>comment_on_news</key>
@@ -3411,7 +3411,7 @@
     </bit>
     <bit>
       <key>acp_perms_news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>acp_perms_articles</key>
@@ -3837,7 +3837,7 @@
     </bit>
     <bit>
       <key>type_news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>type_kb</key>
@@ -5097,7 +5097,7 @@
     </bit>
     <bit>
       <key>grp_kb</key>
-      <value>Knowledge Base</value>
+      <value>知识库</value>
     </bit>
     <bit>
       <key>grp_kb_desc</key>
@@ -5121,7 +5121,7 @@
     </bit>
     <bit>
       <key>grp_news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>grp_news_desc</key>
@@ -6391,7 +6391,7 @@
     </bit>
     <bit>
       <key>submit_a_ticket</key>
-      <value>Submit A Ticket</value>
+      <value>提交工单</value>
     </bit>
     <bit>
       <key>submit_ticket_user_msg</key>
@@ -8780,7 +8780,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>home</key>
-      <value>Home</value>
+      <value>主页</value>
     </bit>
     <bit>
       <key>hours_ago</key>
@@ -8800,7 +8800,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>knowledge_base</key>
-      <value>Knowledge Base</value>
+      <value>知识库</value>
     </bit>
     <bit>
       <key>less_than_a_minute_ago</key>
@@ -8832,11 +8832,11 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>my_account</key>
-      <value>My Account</value>
+      <value>我的帐户</value>
     </bit>
     <bit>
       <key>news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>no</key>
@@ -8864,7 +8864,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>open_ticket</key>
-      <value>Submit A Ticket</value>
+      <value>提交工单</value>
     </bit>
     <bit>
       <key>password</key>
@@ -8928,7 +8928,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>ticket_history</key>
-      <value>Ticket History</value>
+      <value>历史工单</value>
     </bit>
     <bit>
       <key>tickets_overview</key>
@@ -9176,7 +9176,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>news</key>
-      <value>News</value>
+      <value>公告</value>
     </bit>
     <bit>
       <key>comments</key>
