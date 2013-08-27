@@ -45,7 +45,12 @@ class td_ad_home {
 
         if ( file_exists( TD_PATH .'install/install.lock' ) )
         {
-            $this->trellis->send_message( 'alert', $this->trellis->lang['alert_install_locked'] );
+            $install_url = $this->trellis->config['hd_url'].'/install/index.php';
+            $install_url_status = @get_headers( $install_url );
+            if( strpos( $install_url_status[0], '200' ) )
+            {
+                $this->trellis->send_message( 'alert', $this->trellis->lang['alert_install_locked'] );
+            }
         }
         elseif ( is_dir( TD_PATH .'install' ) )
         {

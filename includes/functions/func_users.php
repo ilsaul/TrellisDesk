@@ -207,6 +207,7 @@ class td_func_users {
         $fields = array(
                         'name'                    => 'string',
                         'email'                    => 'string',
+                        'ldap_user'			        => 'int',
                         'pass_hash'                => 'string',
                         'pass_salt'                => 'string',
                         'ugroup'                => 'int',
@@ -419,6 +420,7 @@ class td_func_users {
         $fields = array(
                         'name'                    => 'string',
                         'email'                    => 'string',
+                        'ldap_user'			        => 'int',
                         'ugroup'                => 'int',
                         'ugroup_sub'            => 'string',
                         'ugroup_sub_acp'        => 'int',
