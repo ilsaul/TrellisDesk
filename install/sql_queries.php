@@ -56,7 +56,7 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."asessions` (
   `s_uname` varchar(255) NOT NULL,
   `s_location` varchar(255) NOT NULL,
   `s_inticket` int(11) NOT NULL DEFAULT '0',
-  `s_messages` text NOT NULL,
+  `s_messages` text,
   `s_time` int(10) NOT NULL DEFAULT '0',
   `s_ipadd` varchar(32) NOT NULL,
   PRIMARY KEY (`s_id`)
@@ -210,7 +210,7 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."logs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL DEFAULT '0',
   `action` text NOT NULL,
-  `extra` text NOT NULL,
+  `extra` text,
   `type` varchar(20) NOT NULL,
   `level` tinyint(1) NOT NULL DEFAULT '0',
   `content_type` varchar(20) NOT NULL,
@@ -329,9 +329,9 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."sessions` (
   `s_id` varchar(40) NOT NULL,
   `s_uid` int(11) NOT NULL DEFAULT '0',
   `s_uname` varchar(255) NOT NULL,
-  `s_email` varchar(255) NOT NULL,
+  `s_email` varchar(255),
   `s_location` text NOT NULL,
-  `s_tkey` varchar(255) NOT NULL,
+  `s_tkey` varchar(255),
   `s_guest` tinyint(1) NOT NULL DEFAULT '0',
   `s_time` int(10) NOT NULL DEFAULT '0',
   `s_ipadd` varchar(32) NOT NULL,
@@ -383,7 +383,7 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."statuses` (
 
 $SQL[] = "CREATE TABLE `". $db_prefix ."tickets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `mask` varchar(255) NOT NULL,
+  `mask` varchar(255),
   `did` int(11) NOT NULL DEFAULT '0',
   `uid` int(11) NOT NULL DEFAULT '0',
   `email` varchar(255) NOT NULL,
@@ -396,7 +396,7 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."tickets` (
   `votes` int(11) NOT NULL DEFAULT '0',
   `rating` float NOT NULL DEFAULT '0',
   `rating_total` float NOT NULL DEFAULT '0',
-  `notes` text NOT NULL,
+  `notes` text,
   `close_uid` int(11) NOT NULL DEFAULT '0',
   `close_date` int(10) NOT NULL DEFAULT '0',
   `status` tinyint(3) NOT NULL DEFAULT '0',
@@ -447,12 +447,12 @@ $SQL[] = "CREATE TABLE `". $db_prefix ."users` (
   `email` varchar(255) NOT NULL,
   `pass_hash` varchar(255) NOT NULL,
   `pass_salt` varchar(255) NOT NULL,
-  `login_key` varchar(255) NOT NULL,
+  `login_key` varchar(255),
   `ugroup` int(11) NOT NULL DEFAULT '0',
   `ugroup_sub` varchar(255) NOT NULL,
   `ugroup_sub_acp` tinyint(1) NOT NULL DEFAULT '0',
   `title` varchar(255) NOT NULL,
-  `signature` text NOT NULL,
+  `signature` text,
   `sig_html` tinyint(1) NOT NULL DEFAULT '0',
   `sig_auto` tinyint(1) NOT NULL DEFAULT '0',
   `time_zone` varchar(5) NOT NULL,
@@ -527,6 +527,8 @@ $SQL[] = "INSERT INTO `". $db_prefix ."groups` VALUES(4, 'Administrators', 1, 1,
 $SQL[] = "INSERT INTO `". $db_prefix ."groups` VALUES(5, 'Staff', 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 'a:1:{i:1;i:1;}', 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, '', 'a:1:{i:1;i:1;}', 1, 'a:9:{s:12:\"manage_users\";i:1;s:16:\"manage_users_add\";i:1;s:17:\"manage_users_edit\";i:1;s:15:\"manage_articles\";i:1;s:19:\"manage_articles_add\";i:1;s:20:\"manage_articles_edit\";i:1;s:11:\"tools_maint\";i:1;s:19:\"tools_maint_recount\";i:1;s:19:\"tools_maint_rebuild\";i:1;}', 'a:14:{i:2;a:12:{s:1:\"v\";i:1;s:1:\"r\";i:1;s:2:\"et\";i:1;s:2:\"er\";i:1;s:2:\"mv\";i:1;s:2:\"es\";i:1;s:2:\"as\";i:1;s:2:\"aa\";i:1;s:1:\"c\";i:0;s:2:\"ro\";i:1;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:3;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:1;s:2:\"et\";i:0;s:2:\"er\";i:1;s:2:\"mv\";i:0;s:2:\"es\";i:1;s:2:\"as\";i:1;s:2:\"aa\";i:0;s:1:\"c\";i:1;s:2:\"ro\";i:0;s:2:\"dt\";i:1;s:2:\"dr\";i:0;}i:4;a:12:{s:1:\"v\";i:1;s:1:\"r\";i:0;s:2:\"et\";i:1;s:2:\"er\";i:1;s:2:\"mv\";i:1;s:2:\"es\";i:1;s:2:\"as\";i:1;s:2:\"aa\";i:1;s:1:\"c\";i:1;s:2:\"ro\";i:1;s:2:\"dt\";i:1;s:2:\"dr\";i:0;}i:15;a:12:{s:1:\"v\";i:1;s:1:\"r\";i:0;s:2:\"et\";i:1;s:2:\"er\";i:0;s:2:\"mv\";i:1;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:1;s:1:\"c\";i:0;s:2:\"ro\";i:1;s:2:\"dt\";i:0;s:2:\"dr\";i:1;}i:5;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:1;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:6;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:0;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:7;a:12:{s:1:\"v\";i:1;s:1:\"r\";i:1;s:2:\"et\";i:1;s:2:\"er\";i:1;s:2:\"mv\";i:1;s:2:\"es\";i:1;s:2:\"as\";i:1;s:2:\"aa\";i:1;s:1:\"c\";i:1;s:2:\"ro\";i:1;s:2:\"dt\";i:1;s:2:\"dr\";i:1;}i:12;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:1;s:2:\"et\";i:1;s:2:\"er\";i:1;s:2:\"mv\";i:1;s:2:\"es\";i:1;s:2:\"as\";i:1;s:2:\"aa\";i:1;s:1:\"c\";i:1;s:2:\"ro\";i:1;s:2:\"dt\";i:1;s:2:\"dr\";i:1;}i:11;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:0;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:14;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:0;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:1;a:12:{s:1:\"v\";i:1;s:1:\"r\";i:0;s:2:\"et\";i:1;s:2:\"er\";i:0;s:2:\"mv\";i:1;s:2:\"es\";i:1;s:2:\"as\";i:1;s:2:\"aa\";i:1;s:1:\"c\";i:1;s:2:\"ro\";i:1;s:2:\"dt\";i:1;s:2:\"dr\";i:1;}i:9;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:0;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:16;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:0;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}i:17;a:12:{s:1:\"v\";i:0;s:1:\"r\";i:0;s:2:\"et\";i:0;s:2:\"er\";i:0;s:2:\"mv\";i:0;s:2:\"es\";i:0;s:2:\"as\";i:0;s:2:\"aa\";i:0;s:1:\"c\";i:0;s:2:\"ro\";i:0;s:2:\"dt\";i:0;s:2:\"dr\";i:0;}}', 0);";
 
 $SQL[] = "INSERT INTO `". $db_prefix ."languages` VALUES(1, 'en', 'English', 1, 1);";
+$SQL[] = "INSERT INTO `". $db_prefix ."languages` VALUES(2, 'it', 'Italiano', '0', '0');";
+$SQL[] = "INSERT INTO `". $db_prefix ."languages` VALUES(3, 'zh_CN', 'Cinese	', '0', '0');";
 
 $SQL[] = "INSERT INTO `". $db_prefix ."news` VALUES(1, 1, 'Sample News Item', 'This is a sample news item that can be edited or deleted at any time.', '&lt;p&gt;This is a sample news item that can be edited or deleted at any time.&lt;/p&gt;', 1, 0, 0, 0, ". mysql_real_escape_string( intval( time() ) ) .", '". mysql_real_escape_string( $this->trellis->input['ip_address'] ) ."');";
 
