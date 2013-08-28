@@ -9,9 +9,9 @@
 
 class trellis {
 
-    public $version_name = '2.0 Alpha 4';
-    public $version_short = '2.0 a4';
-    public $version_number = '20014000';
+    public $version_name = '2.0 Alpha 5';
+    public $version_short = '2.0 a5';
+    public $version_number = '20130828';
     public $config = array();
     public $lang = array();
     private $htmlpurifier;
