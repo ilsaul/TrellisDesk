@@ -33,8 +33,20 @@ class td_source_tickets {
 
         # TODO: Guest Support
         if ( ! $this->trellis->user['id'] )
-        {
-            $this->trellis->log( 'security', "Blocked Guest Access Ticket Center" );
+        {	
+        	 //MC 20130828 - Bug.ID: #1 - Incorrect integer value: 's' for column 'uid' at row 1, 256) called at [/Users/moreno/Sites/tre/includes/classes/class_mysql.php:79]
+        	 $log_array = array(
+        	              //'uid'              => 0,
+                          'msg'              => 'Blocked Guest Access Ticket Center', //'no_guest_ticket_center',
+                          'type'             => 'security',
+                          'level'            => 1,
+                          'content_type'     => '',
+                          'content_id'       => 0,
+                         // 'extra'            => '',
+                         );
+                    
+            //$this->trellis->log( 'security', "Blocked Guest Access Ticket Center" );
+            $this->trellis->log($log_array);
 
             $this->trellis->skin->error( 'must_be_user', 1 );
         }
