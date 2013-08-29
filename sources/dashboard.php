@@ -74,6 +74,7 @@ class td_source_dashboard {
                 }
                 elseif ( $this->trellis->user['s_tkey'] )
                 {
+				
                     $this->trellis->db->construct( array(
                                                                'select'    => array( 'id', 'dname', 'subject', 'priority', 'date', 'status' ),
                                                                'from'        => 'tickets',
