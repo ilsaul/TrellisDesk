@@ -50,8 +50,8 @@ class td_source_dashboard {
         {
             $this->trellis->load_functions('tickets');
 
-            if ( $this->trellis->user['id'] || $this->trellis->user['s_tkey'] )
-            {
+            /*if ( $this->trellis->user['id'] || $this->trellis->user['s_tkey'] )
+            {*/
                 if ( $this->trellis->user['id'] )
                 {
                     $tickets = $this->trellis->func->tickets->get( array(
@@ -82,7 +82,9 @@ class td_source_dashboard {
                                                                 'order'    => array( 'date' => 'DESC' ),
                                                                 'limit'    => array( 0, 8 ),
                                                          )     );
-                }
+                
+				
+				}
 
                 if ( $tickets )
                 {
@@ -100,7 +102,8 @@ class td_source_dashboard {
 
                     $this->trellis->skin->set_var( 'tickets', $tickets );
                 }
-            }
+            // } // end if with check on logged user or anonymous user
+			
         }
 
         #=============================

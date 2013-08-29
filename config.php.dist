@@ -10,13 +10,4 @@ $data_path=$data_path.'/data/';
 $data_path = str_replace("install/", "", $data_path);
 $config['data_path'] = $data_path;
 $config['debug_level'] = 0;
-$config['ldap_enabled'] = false;
-$config['ldap_servers'] = array('your.ldap.server');
-$config['ldap_suffix'] = '@yourdomain.com';
-$config['ldap_base_dn'] = "DC=yourdomain,DC=com";
-$config['ldap_ssl'] = false;
-$config['ldap_tls'] = false;
-$config['ldap_allowed_group'] = '';
-$config['ldap_bind_dn'] = 'CN=LDAP Auth User,CN=Users,DC=yourdomain,DC=com';
-$config['ldap_bind_pass'] = 'LDAPpassword';
 ?>
