@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<language key="it" name="Italiano" version="20130831" exported="1366176693">
+<language key="it" name="Italiano" version="20130828" exported="1377939077">
   <file name="ad_lang_articles.php">
     <bit>
       <key>articles_list</key>
@@ -1373,7 +1373,7 @@
     </bit>
     <bit>
       <key>login_msg</key>
-      <value>Aaron, can you write something to go here?  I like your writing style better than mine. :P Just something about how this is their ACP and give them a general idea of what they can do here like manage tickes, etc.  Thanks!</value>
+      <value>This is the Administration Control Panel (ACP) for your Trellis Desk. This is your portal to manage your helpdesk. Users, tickets, the look &amp;amp; feel of your helpdesk, and many more settings are available. You must have appropriate permissions to access the ACP.</value>
     </bit>
     <bit>
       <key>login_no_admin</key>
@@ -2161,7 +2161,7 @@
     </bit>
     <bit>
       <key>acp_title</key>
-      <value>Trellis Desk | Administration Control Panel</value>
+      <value> | Administration Control Panel</value>
     </bit>
     <bit>
       <key>default</key>
@@ -2229,7 +2229,7 @@
     </bit>
     <bit>
       <key>menu_overview</key>
-      <value>Sommario</value>
+      <value>Overview</value>
     </bit>
     <bit>
       <key>menu_my_acp_settings</key>
@@ -2237,19 +2237,19 @@
     </bit>
     <bit>
       <key>menu_about_trellis_desk</key>
-      <value>Informazioni su Trellis Desk</value>
+      <value>About Trellis Desk</value>
     </bit>
     <bit>
       <key>menu_ticket_control</key>
-      <value>Gestione Ticket</value>
+      <value>Ticket Control</value>
     </bit>
     <bit>
       <key>menu_depart_control</key>
-      <value>Gestione Dipartimenti</value>
+      <value>Department Control</value>
     </bit>
     <bit>
       <key>menu_user_control</key>
-      <value>Gestione Utenti</value>
+      <value>User Control</value>
     </bit>
     <bit>
       <key>menu_news_control</key>
@@ -3019,339 +3019,267 @@
   <file name="ad_lang_groups.php">
     <bit>
       <key>editing_group</key>
-      <value>Editing Group:</value>
+      <value>Modifica gruppo:</value>
     </bit>
     <bit>
       <key>adding_group</key>
-      <value>Adding Group</value>
+      <value>Aggiunta del gruppo</value>
     </bit>
     <bit>
       <key>name</key>
-      <value>Name</value>
+      <value>Nome</value>
     </bit>
     <bit>
       <key>ticket_center</key>
-      <value>Ticket Center</value>
+      <value>Centro Ticket</value>
     </bit>
     <bit>
       <key>ticket_center_access</key>
-      <value>Ticket Center Access</value>
+      <value>Accesso al centro ticket</value>
     </bit>
     <bit>
       <key>create_new_tickets</key>
-      <value>Create New Tickets</value>
+      <value>Creazione nuovi ticket</value>
     </bit>
     <bit>
       <key>edit_own_tickets</key>
-      <value>Edit Own Tickets</value>
+      <value>Modificare i propri ticket</value>
     </bit>
     <bit>
       <key>close_own_tickets</key>
-      <value>Close Own Tickets</value>
+      <value>Chiudere i propri ticket</value>
     </bit>
     <bit>
       <key>edit_own_replies</key>
-      <value>Edit Own Replies</value>
+      <value>Modificare le proprie risposte</value>
     </bit>
     <bit>
       <key>delete_own_replies</key>
-      <value>Delete Own Replies</value>
+      <value>Cancellare le proprie risposte</value>
     </bit>
     <bit>
       <key>rate_staff_replies</key>
-      <value>Rate Staff Replies</value>
+      <value>Valutare le risposte dello staff</value>
     </bit>
     <bit>
       <key>allow_attachments</key>
-      <value>Allow Attachments</value>
+      <value>Inserire gli allegati</value>
     </bit>
     <bit>
       <key>max_upload_size</key>
-      <value>Max Upload Size (Bytes)</value>
+      <value>Massima dimensione di caricamento (bytes)</value>
     </bit>
     <bit>
       <key>department_permissions</key>
-      <value>Department Permissions</value>
+      <value>Permessi dei dipartimenti</value>
     </bit>
     <bit>
       <key>kb_permissions</key>
-      <value>KB Permissions</value>
-    </bit>
-    <bit>
-      <key>knowledge_base</key>
-      <value>Knowledge Base</value>
+      <value>Permessi ai documenti</value>
     </bit>
     <bit>
       <key>knowledge_base_access</key>
-      <value>Knowledge Base Access</value>
+      <value>Accesso ai Documenti</value>
     </bit>
     <bit>
       <key>comment_on_articles</key>
-      <value>Comment on Articles</value>
+      <value>Commentare gli articoli</value>
     </bit>
     <bit>
       <key>edit_own_article_comments</key>
-      <value>Edit Own Article Comments</value>
+      <value>Modificare il proprio commento agli articoli</value>
     </bit>
     <bit>
       <key>delete_own_article_comments</key>
-      <value>Delete Own Article Comments</value>
+      <value>Cancellare il proprio commento agli articoli</value>
     </bit>
     <bit>
       <key>rate_articles</key>
-      <value>Rate Articles</value>
-    </bit>
-    <bit>
-      <key>news</key>
-      <value>News</value>
+      <value>Votare gli articoli</value>
     </bit>
     <bit>
       <key>comment_on_news</key>
-      <value>Comments on News</value>
+      <value>Commentare le notizie</value>
     </bit>
     <bit>
       <key>edit_own_news_comments</key>
-      <value>Edit Own News Comments</value>
+      <value>Modificre i propri commenti alle notizie</value>
     </bit>
     <bit>
       <key>delete_own_news_comments</key>
-      <value>Delete Own News Comments</value>
+      <value>Cancellare i propri commenti alle notizie</value>
     </bit>
     <bit>
       <key>profile</key>
-      <value>Profile</value>
+      <value>Profilo</value>
     </bit>
     <bit>
       <key>change_skin</key>
-      <value>Change Skin</value>
+      <value>Cambiare skin</value>
     </bit>
     <bit>
       <key>change_language</key>
-      <value>Change Language</value>
+      <value>Cambiare lingua</value>
     </bit>
     <bit>
       <key>staff_perms_settings</key>
-      <value>Staff Permissions / Settings</value>
+      <value>Permessi e Impostazioni dello staff</value>
     </bit>
     <bit>
       <key>staff_perms_settings_msg</key>
-      <value>The following permissions / settings only apply if ACP Access is granted below.</value>
+      <value>I seguenti permessi e Impostazioni si applicano solo se si ha accesso al ACP.</value>
     </bit>
     <bit>
       <key>staff_hide_names</key>
-      <value>Hide Staff Names</value>
+      <value>Nascondi i nomi dello staff</value>
     </bit>
     <bit>
       <key>staff_ticket_perms_msg</key>
-      <value>* If group has ACP Access, permission may be ignored or overridden by the Staff Department Permissions below.</value>
+      <value>* Se il gruppo ha accesso all'ACP, l'autorizzazione pu&#xF2; essere ignorata o sovrascritta dai permessi del dipartimento interessato.</value>
     </bit>
     <bit>
       <key>edit_all_article_comments</key>
-      <value>Edit All Article Comments</value>
+      <value>Modifica tutti i commenti degli articoli</value>
     </bit>
     <bit>
       <key>delete_all_article_comments</key>
-      <value>Delete All Article Comments</value>
+      <value>Cancella tutti i commenti degli articoli</value>
     </bit>
     <bit>
       <key>edit_all_news_comments</key>
-      <value>Edit All News Comments</value>
+      <value>Modifica tutti i commenti ai documenti</value>
     </bit>
     <bit>
       <key>delete_all_news_comments</key>
-      <value>Delete All News Comments</value>
+      <value>Cancella tutti i commenti ai documenti</value>
     </bit>
     <bit>
       <key>grant_acp_access</key>
-      <value>Grant ACP Access</value>
+      <value>Accesso al ACP</value>
     </bit>
     <bit>
       <key>acp_permissions</key>
-      <value>ACP Permissions</value>
+      <value>Permessi ACP</value>
     </bit>
     <bit>
       <key>staff_depart_perms</key>
-      <value>Staff Department Permissions</value>
+      <value>Permessi dello staff sul dipartimento</value>
     </bit>
     <bit>
       <key>view_reply</key>
-      <value>View / Reply</value>
+      <value>Visione / Risposta</value>
     </bit>
     <bit>
       <key>edit</key>
-      <value>Edit</value>
+      <value>Modifica</value>
     </bit>
     <bit>
       <key>move</key>
-      <value>Move</value>
+      <value>Sposta</value>
     </bit>
     <bit>
       <key>assign</key>
-      <value>Assign</value>
+      <value>Assegna</value>
     </bit>
     <bit>
       <key>close</key>
-      <value>Close</value>
-    </bit>
-    <bit>
-      <key>delete</key>
-      <value>Delete</value>
-    </bit>
-    <bit>
-      <key>department</key>
-      <value>Department</value>
+      <value>Chiude</value>
     </bit>
     <bit>
       <key>button_edit_group</key>
-      <value>Edit Group</value>
+      <value>Modifica Gruppo</value>
     </bit>
     <bit>
       <key>button_add_group</key>
-      <value>Add Group</value>
+      <value>Aggiungi Gruppo</value>
     </bit>
     <bit>
       <key>group_list</key>
-      <value>Group List</value>
+      <value>Lista Gruppi</value>
     </bit>
     <bit>
       <key>help_about_groups_title</key>
-      <value>About Groups</value>
+      <value>Informazioni sui gruppi</value>
     </bit>
     <bit>
       <key>help_about_groups_msg</key>
-      <value>You can assign different permissions to different groups. For example, you can prohibit &lt;em&gt;guests&lt;/em&gt; (non-logged-in visitors) from accessing your knowledgebase, and allow your &lt;em&gt;users&lt;/em&gt; (logged-in visitors) to rate articles in your knowledgebase but not comment on them.</value>
+      <value>&amp;Egrave; possibile assegnare autorizzazioni diverse a gruppi diversi. Ad esempio, &amp;egrave; possibile impedire agli &lt;em&gt;ospiti&lt;/em&gt; (visitatori non registrati) di accedere alla documentazione e consentire agli &lt;em&gt;utenti&lt;/em&gt; (visitatori registrati) di votare gli articoli dei vostri documenti ma non commentare su di loro.</value>
     </bit>
     <bit>
       <key>users</key>
-      <value>Users</value>
+      <value>Utenti</value>
     </bit>
     <bit>
       <key>menu_add</key>
-      <value>&lt;strong&gt;Add&lt;/strong&gt; a new group</value>
+      <value>&lt;strong&gt;Aggiungi&lt;/strong&gt; un nuovo gruppo	</value>
     </bit>
     <bit>
       <key>menu_back</key>
-      <value>&lt;strong&gt;Back&lt;/strong&gt; to group list</value>
+      <value>&lt;strong&gt;Indietro&lt;/strong&gt; alla lista dei gruppi</value>
     </bit>
     <bit>
       <key>menu_cache</key>
-      <value>&lt;strong&gt;Rebuild&lt;/strong&gt; groups cache</value>
+      <value>&lt;strong&gt;Ricrea&lt;/strong&gt; la cache dei gruppi</value>
     </bit>
     <bit>
       <key>menu_group_options</key>
-      <value>Group Options</value>
+      <value>Opzioni per il Gruppo</value>
     </bit>
     <bit>
       <key>deleting_group</key>
-      <value>Deleting Group:</value>
+      <value>Eliminazione del Gruppo:</value>
     </bit>
     <bit>
       <key>delete_group_users_qs</key>
-      <value>What would you like to do with the users of this group?</value>
+      <value>Cosa vorresti fare con gli utenti di questo gruppo?</value>
     </bit>
     <bit>
       <key>move_users_to_group</key>
-      <value>Move Users to Group:</value>
+      <value>Spostare gli utenti al Gruppo:</value>
     </bit>
     <bit>
       <key>delete_users</key>
-      <value>Delete Users</value>
+      <value>Cancellare gli utenti</value>
     </bit>
     <bit>
       <key>button_delete_group</key>
-      <value>Delete Group</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_view</key>
-      <value>Allows user to view tickets.  This does not grant any other permissions such as replying to a ticket.</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_reply</key>
-      <value>Allows user to accept, hold, and reply to tickets.</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_edit</key>
-      <value>Allows user to edit tickets (includes subject, priority, status, etc).</value>
-    </bit>
-    <bit>
-      <key>tip_reply_edit</key>
-      <value>Allows user to edit ticket replies.</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_move</key>
-      <value>Allows user to move tickets to a new department.</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_escalate</key>
-      <value>Allows user to escalate or remove escalated status on tickets.</value>
-    </bit>
-    <bit>
-      <key>tip_assign_self</key>
-      <value>Allows user to assign tickets to him/herself.</value>
-    </bit>
-    <bit>
-      <key>tip_assign_all</key>
-      <value>Allows user to assign tickets to any staff user (including him/herself).</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_close</key>
-      <value>Allows user to close tickets.</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_reopen</key>
-      <value>Allows user to re-open closed tickets.</value>
-    </bit>
-    <bit>
-      <key>tip_ticket_delete</key>
-      <value>Allows user to delete tickets.</value>
-    </bit>
-    <bit>
-      <key>tip_reply_delete</key>
-      <value>Allows user to delete ticket replies.</value>
-    </bit>
-    <bit>
-      <key>tip_depart_perms</key>
-      <value>Select the departments this group will have access to for submitting tickets. If this is a staff group, these permissions will be applied for staff creating new tickets within the ACP. For staff managing tickets (not creating), the below Staff Department Permissions will be used.</value>
-    </bit>
-    <bit>
-      <key>tip_max_upload_size</key>
-      <value>Maximum file size in &lt;strong&gt;bytes&lt;/strong&gt; for attachment uploads. Leave blank or set to 0 for unlimited.</value>
+      <value>Cancella Gruppo</value>
     </bit>
     <bit>
       <key>lv_no_group_name</key>
-      <value>Please enter a group name</value>
+      <value>Inserisci il nome di un gruppo</value>
     </bit>
     <bit>
       <key>error_no_group_name</key>
-      <value>Please enter a group name.</value>
+      <value>Inserisci il nome del gtuppo.</value>
     </bit>
     <bit>
       <key>alert_group_updated</key>
-      <value>The group has been successfully updated.</value>
+      <value>Il gruppo &amp;egrave; stato aggiornato con successo.</value>
     </bit>
     <bit>
       <key>alert_group_added</key>
-      <value>The group has been successfully added.</value>
+      <value>Il gruppo &amp;egrave; stato aggiunto con successo.</value>
     </bit>
     <bit>
       <key>error_group_deleted</key>
-      <value>The group has been successfully deleted.</value>
+      <value>Il gruppo &amp;egrave; stato cancellato con sucesso.</value>
     </bit>
     <bit>
       <key>can_escalate_tickets</key>
-      <value>Can Escalate Own Tickets</value>
+      <value>Cambiare la priorit&#xE0; dei propri ticket</value>
     </bit>
     <bit>
       <key>edit_original_ticket_msgs</key>
-      <value>Edit Original Ticket Messages</value>
+      <value>Modifica i messaggi originali dei ticket</value>
     </bit>
     <bit>
       <key>reopen_own_tickets</key>
-      <value>Reopen Own Tickets</value>
+      <value>Riaprire i propri ticket</value>
     </bit>
     <bit>
       <key>assign_outside</key>
-      <value>Assign to Outside Staff</value>
+      <value>Assegna allo staff esterno</value>
     </bit>
     <bit>
       <key>warning_force_login</key>
@@ -3359,15 +3287,95 @@
     </bit>
     <bit>
       <key>upload_exts</key>
-      <value>Allowed Upload Extensions</value>
+      <value>Estensioni abilitate per l'inserimento</value>
     </bit>
     <bit>
       <key>alert_email_notify</key>
       <value>Email notification sent to:</value>
     </bit>
     <bit>
+      <key>tip_kb_perms</key>
+      <value>Selezionare le categorie in cui il gruppo pu&amp;ograve; agire</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_view</key>
+      <value>Abilita l'utente a vedere i ticket. Questo non influenza gli altri permessi come la possibilit&amp;agrave; di rispondere.</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_reply</key>
+      <value>Abilita l'utente ad accettare, tenere, e rispondere ai ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_edit</key>
+      <value>Abilita l'utente a modificare i ticket (incluso oggetto, priorit&amp;agrave;, stato, ecc).</value>
+    </bit>
+    <bit>
+      <key>tip_reply_edit</key>
+      <value>Abilita l'utente a modificare le risposte dei ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_move</key>
+      <value>Abilita l'utente a spostare i ticket ad un nuovo dipartimento.</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_escalate</key>
+      <value>Abilita l'utente a aumetare o diminuire la priorit&amp;agrave; di un ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_assign_self</key>
+      <value>Abilita l'utente ad assegnari i ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_assign_all</key>
+      <value>Abilita l'utente ad assegnare i ticket a uno degli utenti dello staff (incluso se stesso).</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_close</key>
+      <value>Abilita l'utente a chiudere i ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_reopen</key>
+      <value>Abilita l'utente a riapire i tichet chiusi.</value>
+    </bit>
+    <bit>
+      <key>tip_ticket_delete</key>
+      <value>Abilita l'utente a cancellare i ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_reply_delete</key>
+      <value>Abilita l'utente a cancellare le risposte ai ticket.</value>
+    </bit>
+    <bit>
+      <key>tip_depart_perms</key>
+      <value>Seleziona i dipartimenti di cui questo gruppo avr&#xE0; accesso ai ticket presenti. Se questo &#xE8; un gruppo dello staff, queste autorizzazioni saranno applicate alla creazione di nuovi ticket da parte dello staff all'interno della ACP. Per la gestione dei ticket da parte dello staff (non la creazione), saranno utilizzati i permessi di questa sezione.</value>
+    </bit>
+    <bit>
+      <key>tip_max_upload_size</key>
+      <value>Dimensione massima del file in &lt;strong&gt;bytes&lt;/strong&gt; per il caricamento di allegati. Lasciare vuoto o impostato su 0 per illimitato.</value>
+    </bit>
+    <bit>
+      <key>tip_upload_exts</key>
+      <value>Immettere le estensioni senza il punto e separandole con virgola</value>
+    </bit>
+    <bit>
+      <key>tip_grant_acp_access</key>
+      <value>??? Abilita l'accesso alla parte amministrativa ACP per questo gruppo</value>
+    </bit>
+    <bit>
+      <key>tip_staff_hide_names</key>
+      <value>??? Nasconde i nomi dello staff agli utenti</value>
+    </bit>
+    <bit>
+      <key>tip_assign_outside</key>
+      <value>??? tip_assign_outside</value>
+    </bit>
+    <bit>
+      <key>tip_acp_permissions</key>
+      <value>??? Cosa poosso vedere gli utenti di questo gruppo nel ACP</value>
+    </bit>
+    <bit>
       <key>acp_perms_manage</key>
-      <value>Management</value>
+      <value>Gestione</value>
     </bit>
     <bit>
       <key>acp_perms_look</key>
@@ -3375,11 +3383,11 @@
     </bit>
     <bit>
       <key>acp_perms_priorities</key>
-      <value>Priorities</value>
+      <value>Priorit&amp;agrave:</value>
     </bit>
     <bit>
       <key>acp_perms_statuses</key>
-      <value>Statuses</value>
+      <value>Stati</value>
     </bit>
     <bit>
       <key>acp_perms_flags</key>
@@ -3387,43 +3395,43 @@
     </bit>
     <bit>
       <key>acp_perms_rtemplates</key>
-      <value>Reply Templates</value>
+      <value>Template di Risposta</value>
     </bit>
     <bit>
       <key>acp_perms_departs</key>
-      <value>Departments</value>
+      <value>Dipartimento</value>
     </bit>
     <bit>
       <key>acp_perms_cdfields</key>
-      <value>Custom Depart Fields</value>
+      <value>Campi personalizati del Dipartimento</value>
     </bit>
     <bit>
       <key>acp_perms_users</key>
-      <value>Users</value>
+      <value>Utenti</value>
     </bit>
     <bit>
       <key>acp_perms_groups</key>
-      <value>Groups</value>
+      <value>Gruppi</value>
     </bit>
     <bit>
       <key>acp_perms_cpfields</key>
-      <value>Custom Profile Fields</value>
+      <value>Campi personalizati del Profilo</value>
     </bit>
     <bit>
       <key>acp_perms_news</key>
-      <value>News</value>
+      <value>Articoli</value>
     </bit>
     <bit>
       <key>acp_perms_articles</key>
-      <value>KB Articles</value>
+      <value>Articoli dei Documenti</value>
     </bit>
     <bit>
       <key>acp_perms_categories</key>
-      <value>KB Categories</value>
+      <value>Categorie dei Documenti</value>
     </bit>
     <bit>
       <key>acp_perms_pages</key>
-      <value>Pages</value>
+      <value>Pagine</value>
     </bit>
     <bit>
       <key>acp_perms_skins</key>
@@ -3431,47 +3439,47 @@
     </bit>
     <bit>
       <key>acp_perms_langs</key>
-      <value>Languages</value>
+      <value>Lingue</value>
     </bit>
     <bit>
       <key>acp_perms_emails</key>
-      <value>Email Templates</value>
+      <value>Template di Email</value>
     </bit>
     <bit>
       <key>acp_perms_settings</key>
-      <value>Settings</value>
+      <value>Impostazioni</value>
     </bit>
     <bit>
       <key>acp_perms_maint</key>
-      <value>Maintenance</value>
+      <value>Manutenzione</value>
     </bit>
     <bit>
       <key>acp_perms_backups</key>
-      <value>Backups</value>
+      <value>Backup</value>
     </bit>
     <bit>
       <key>acp_perms_logs</key>
-      <value>Logs</value>
+      <value>Log</value>
     </bit>
     <bit>
       <key>acp_perms_add</key>
-      <value>Add</value>
+      <value>Aggiunta</value>
     </bit>
     <bit>
       <key>acp_perms_edit</key>
-      <value>Edit</value>
+      <value>Modifica</value>
     </bit>
     <bit>
       <key>acp_perms_delete</key>
-      <value>Delete</value>
+      <value>Cancellazione</value>
     </bit>
     <bit>
       <key>acp_perms_reorder</key>
-      <value>Reorder</value>
+      <value>Riordinamento</value>
     </bit>
     <bit>
       <key>acp_perms_approve</key>
-      <value>Approve</value>
+      <value>Approvazione</value>
     </bit>
     <bit>
       <key>acp_perms_staff</key>
@@ -3479,19 +3487,19 @@
     </bit>
     <bit>
       <key>acp_perms_tools</key>
-      <value>Tools</value>
+      <value>Strumenti</value>
     </bit>
     <bit>
       <key>acp_perms_recount</key>
-      <value>Recount</value>
+      <value>Ricontare</value>
     </bit>
     <bit>
       <key>acp_perms_rebuild</key>
-      <value>Rebuild</value>
+      <value>Ricostruire</value>
     </bit>
     <bit>
       <key>acp_perms_clean</key>
-      <value>Clean</value>
+      <value>Pulire</value>
     </bit>
     <bit>
       <key>acp_perms_backup</key>
@@ -3499,25 +3507,25 @@
     </bit>
     <bit>
       <key>acp_perms_restore</key>
-      <value>Restore</value>
+      <value>Ripristinare</value>
     </bit>
   </file>
   <file name="ad_lang_home.php">
     <bit>
-      <key>button_save_notes</key>
-      <value>Salva le Note</value>
-    </bit>
-    <bit>
       <key>alert_install_locked</key>
-      <value>La tua directory di &lt;i&gt;installazione&lt;/i&gt; &egrave; ancora presente. Anche se l\'installazione &egrave; bloccata, raccomandiamo di cancellare o rinominare la directory di &lt;i&gt;installazione&lt;/i&gt; per aumentare la sicurezza.</value>
+      <value>La tua directory di &lt;i&gt;installazione&lt;/i&gt; &amp;egrave; ancora presente. Anche se l'installazione &amp;egrave; bloccata, raccomandiamo di cancellare o rinominare la directory di &lt;i&gt;installazzione&lt;/i&gt; per aumentare la sicurezza.</value>
     </bit>
     <bit>
       <key>alert_install_dir_exists</key>
-      <value>La tua directory di &lt;i&gt;installazione&lt;/i&gt; &egrave; ancora presente. Raccomandiamo caldamente di cancellare o rinominare la directory di &lt;i&gt;installazione&lt;/i&gt; per aumentare la sicurezza.</value>
+      <value>La tua directory di &lt;i&gt;installazione&lt;/i&gt; &amp;egrave; ancora presente. Raccomandiamo caldamente di cancellare o rinominare la directory di &lt;i&gt;installazzione&lt;/i&gt; per aumentare la sicurezza.</value>
     </bit>
     <bit>
       <key>system_status</key>
       <value>Stato del Sistema</value>
+    </bit>
+    <bit>
+      <key>version_check</key>
+      <value>Ultimo controllo della versione</value>
     </bit>
     <bit>
       <key>product_version</key>
@@ -3532,12 +3540,12 @@
       <value>Versione di MySQL</value>
     </bit>
     <bit>
-      <key>version_check</key>
-      <value>Ultimo controllo della versione</value>
+      <key>button_save_notes</key>
+      <value>Salva le Note</value>
     </bit>
     <bit>
       <key>admin_notepad</key>
-      <value>Note dell\'amministratore</value>
+      <value>Note dell'amministratore</value>
     </bit>
     <bit>
       <key>common_acp_sections</key>
@@ -3557,7 +3565,7 @@
     </bit>
     <bit>
       <key>settings</key>
-      <value>Impostazioni</value>
+      <value>Imostazioni</value>
     </bit>
     <bit>
       <key>languages</key>
@@ -3573,11 +3581,19 @@
     </bit>
     <bit>
       <key>documentation</key>
-      <value>Documentazione Prodotto</value>
+      <value>Documentazione</value>
     </bit>
     <bit>
       <key>check_now</key>
       <value>Controlla Adesso</value>
+    </bit>
+    <bit>
+      <key>td_latest_news</key>
+      <value>Ultime Notizie</value>
+    </bit>
+    <bit>
+      <key>td_latest_news_msg</key>
+      <value>TODO</value>
     </bit>
   </file>
   <file name="ad_lang_languages.php">
@@ -4965,7 +4981,7 @@
     </bit>
     <bit>
       <key>available_columns</key>
-      <value>Avaialble Columns</value>
+      <value>Available Columns</value>
     </bit>
     <bit>
       <key>last_reply</key>
@@ -6138,56 +6154,104 @@
   </file>
   <file name="ad_lang_tickets.php">
     <bit>
-      <key>unread</key>
-      <value>Unread</value>
-    </bit>
-    <bit>
       <key>tickets_list</key>
-      <value>Tickets List</value>
+      <value>Lista dei Ticket</value>
     </bit>
     <bit>
-      <key>last_reply</key>
-      <value>Last Reply</value>
+      <key>mask</key>
+      <value>Maschera</value>
     </bit>
     <bit>
       <key>menu_tickets_options</key>
-      <value>Tickets Options</value>
+      <value>Opzioni dei Ticket</value>
     </bit>
     <bit>
       <key>menu_add</key>
-      <value>&lt;strong&gt;Create&lt;/strong&gt; a new ticket</value>
+      <value>&lt;strong&gt;Crea&lt;/strong&gt; un nuovo ticket</value>
+    </bit>
+    <bit>
+      <key>menu_etemplates</key>
+      <value>Modifica i &lt;strong&gt;template delle email&lt;/strong&gt;</value>
+    </bit>
+    <bit>
+      <key>menu_mark_all_read</key>
+      <value>Segna tutti i ticket come &lt;strong&gt;letti&lt;/strong&gt;</value>
+    </bit>
+    <bit>
+      <key>menu_mark_unread</key>
+      <value>Segna i ticket come &lt;strong&gt;non letti&lt;/strong&gt;</value>
+    </bit>
+    <bit>
+      <key>menu_settings</key>
+      <value>&lt;strong&gt;Impostazione&lt;/strong&gt; dei ticket</value>
+    </bit>
+    <bit>
+      <key>filter_by_status</key>
+      <value>Filtra per Stato</value>
+    </bit>
+    <bit>
+      <key>button_save_default</key>
+      <value>Salva come predefinito</value>
+    </bit>
+    <bit>
+      <key>filter_by_department</key>
+      <value>Filtra per Departimento</value>
+    </bit>
+    <bit>
+      <key>filter_by_priority</key>
+      <value>Filtra per Priorit&amp;agrave;</value>
+    </bit>
+    <bit>
+      <key>other_filters</key>
+      <value>Altri Filtri</value>
+    </bit>
+    <bit>
+      <key>all</key>
+      <value>Tutti</value>
+    </bit>
+    <bit>
+      <key>noguest_tickets</key>
+      <value>Nascondi i ticket anonimi</value>
+    </bit>
+    <bit>
+      <key>last_reply</key>
+      <value>Ultima Risposta</value>
+    </bit>
+    <bit>
+      <key>last_replier</key>
+      <value>Last Replier</value>
+    </bit>
+    <bit>
+      <key>unread</key>
+      <value>Unread</value>
     </bit>
     <bit>
       <key>menu_back</key>
       <value>&lt;strong&gt;Back&lt;/strong&gt; to tickets list</value>
     </bit>
     <bit>
-      <key>menu_settings</key>
-      <value>Ticket &lt;strong&gt;settings&lt;/strong&gt;</value>
-    </bit>
-    <bit>
-      <key>menu_etemplates</key>
-      <value>Edit &lt;strong&gt;email templates&lt;/strong&gt;</value>
-    </bit>
-    <bit>
-      <key>filter_by_status</key>
-      <value>Filter by Status</value>
-    </bit>
-    <bit>
-      <key>filter_by_department</key>
-      <value>Filter by Department</value>
-    </bit>
-    <bit>
       <key>filter_by_flag</key>
       <value>Filter by Flag</value>
     </bit>
     <bit>
-      <key>filter_by_priority</key>
-      <value>Filter by Priority</value>
+      <key>my_assigned_tickets</key>
+      <value>Ticket assegnati a me</value>
     </bit>
     <bit>
-      <key>other_filters</key>
-      <value>Other Filters</value>
+      <key>unassigned_tickets</key>
+      <value>Ticket non assegnati</value>
+    </bit>
+    <bit>
+      <key>escalated_tickets</key>
+      <value>Ticket con priorit&amp;agrave;</value>
+    </bit>
+    <bit>
+      <key>ticket_num</key>
+      <value>Ticket #</value>
+    </bit>
+    <bit>
+      <key>ticket_id</key>
+      <value>Ticket ID</value>
     </bit>
     <bit>
       <key>user_id</key>
@@ -6200,18 +6264,6 @@
     <bit>
       <key>user_email</key>
       <value>User Email</value>
-    </bit>
-    <bit>
-      <key>my_assigned_tickets</key>
-      <value>My Assigned Tickets</value>
-    </bit>
-    <bit>
-      <key>ticket_num</key>
-      <value>Ticket #</value>
-    </bit>
-    <bit>
-      <key>ticket_id</key>
-      <value>Ticket ID</value>
     </bit>
     <bit>
       <key>submitted_on</key>
@@ -6232,10 +6284,6 @@
     <bit>
       <key>replies</key>
       <value>Replies</value>
-    </bit>
-    <bit>
-      <key>last_replier</key>
-      <value>Last Replier</value>
     </bit>
     <bit>
       <key>satisfaction</key>
@@ -6272,10 +6320,6 @@
     <bit>
       <key>button_save_notes</key>
       <value>Save Ticket Notes</value>
-    </bit>
-    <bit>
-      <key>button_save_default</key>
-      <value>Save As Default</value>
     </bit>
     <bit>
       <key>ticket_notes</key>
@@ -6350,14 +6394,6 @@
       <value>Change ticket &lt;strong&gt;priority&lt;/strong&gt;</value>
     </bit>
     <bit>
-      <key>menu_mark_unread</key>
-      <value>Mark ticket as &lt;strong&gt;unread&lt;/strong&gt;</value>
-    </bit>
-    <bit>
-      <key>menu_mark_all_read</key>
-      <value>Mark all tickets as &lt;strong&gt;read&lt;/strong&gt;</value>
-    </bit>
-    <bit>
       <key>menu_status</key>
       <value>Change ticket &lt;strong&gt;status&lt;/strong&gt;</value>
     </bit>
@@ -6384,10 +6420,6 @@
     <bit>
       <key>button_add</key>
       <value>Add</value>
-    </bit>
-    <bit>
-      <key>mask</key>
-      <value>Mask</value>
     </bit>
     <bit>
       <key>submit_a_ticket</key>
@@ -6722,18 +6754,6 @@
       <value>Assign To Me</value>
     </bit>
     <bit>
-      <key>all</key>
-      <value>All</value>
-    </bit>
-    <bit>
-      <key>unassigned_tickets</key>
-      <value>Unassigned Tickets</value>
-    </bit>
-    <bit>
-      <key>escalated_tickets</key>
-      <value>Escalated Tickets</value>
-    </bit>
-    <bit>
       <key>select_action</key>
       <value>Select an action</value>
     </bit>
@@ -6748,10 +6768,6 @@
     <bit>
       <key>guest_name</key>
       <value>Guest Name</value>
-    </bit>
-    <bit>
-      <key>noguest_tickets</key>
-      <value>Hide Guest Tickets</value>
     </bit>
     <bit>
       <key>guest_preferences</key>
@@ -8632,7 +8648,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>closed</key>
-      <value>Closed</value>
+      <value>Chiuso</value>
     </bit>
     <bit>
       <key>days_ago</key>
@@ -8640,11 +8656,11 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>department</key>
-      <value>Department</value>
+      <value>Ufficio</value>
     </bit>
     <bit>
       <key>enter_keywords</key>
-      <value>Enter keywords</value>
+      <value>Inserisci le parole chiavi</value>
     </bit>
     <bit>
       <key>escalated</key>
@@ -8652,7 +8668,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>forgot_pass</key>
-      <value>Forgot Your Password?</value>
+      <value>Hai dimenticato la Password?</value>
     </bit>
     <bit>
       <key>gmt</key>
@@ -8660,123 +8676,123 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>gmt_n_100</key>
-      <value>GMT - 1:00 Hours</value>
+      <value>GMT - 1:00 Ora</value>
     </bit>
     <bit>
       <key>gmt_n_1000</key>
-      <value>GMT - 10:00 Hours</value>
+      <value>GMT - 10:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_1100</key>
-      <value>GMT - 11:00 Hours</value>
+      <value>GMT - 11:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_1200</key>
-      <value>GMT - 12:00 Hours</value>
+      <value>GMT - 12:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_200</key>
-      <value>GMT - 2:00 Hours</value>
+      <value>GMT - 2:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_300</key>
-      <value>GMT - 3:00 Hours</value>
+      <value>GMT - 3:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_350</key>
-      <value>GMT - 3:30 Hours</value>
+      <value>GMT - 3:30 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_400</key>
-      <value>GMT - 4:00 Hours</value>
+      <value>GMT - 4:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_500</key>
-      <value>GMT - 5:00 Hours</value>
+      <value>GMT - 5:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_600</key>
-      <value>GMT - 6:00 Hours</value>
+      <value>GMT - 6:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_700</key>
-      <value>GMT - 7:00 Hours</value>
+      <value>GMT - 7:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_800</key>
-      <value>GMT - 8:00 Hours</value>
+      <value>GMT - 8:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_n_900</key>
-      <value>GMT - 9:00 Hours</value>
+      <value>GMT - 9:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_100</key>
-      <value>GMT + 1:00 Hours</value>
+      <value>GMT + 1:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_1000</key>
-      <value>GMT + 10:00 Hours</value>
+      <value>GMT + 10:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_1100</key>
-      <value>GMT + 11:00 Hours</value>
+      <value>GMT + 11:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_1200</key>
-      <value>GMT + 12:00 Hours</value>
+      <value>GMT + 12:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_200</key>
-      <value>GMT + 2:00 Hours</value>
+      <value>GMT + 2:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_300</key>
-      <value>GMT + 3:00 Hours</value>
+      <value>GMT + 3:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_350</key>
-      <value>GMT + 3:30 Hours</value>
+      <value>GMT + 3:30 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_400</key>
-      <value>GMT + 4:00 Hours</value>
+      <value>GMT + 4:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_450</key>
-      <value>GMT + 4:30 Hours</value>
+      <value>GMT + 4:30 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_500</key>
-      <value>GMT + 5:00 Hours</value>
+      <value>GMT + 5:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_550</key>
-      <value>GMT + 5:30 Hours</value>
+      <value>GMT + 5:30 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_600</key>
-      <value>GMT + 6:00 Hours</value>
+      <value>GMT + 6:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_700</key>
-      <value>GMT + 7:00 Hours</value>
+      <value>GMT + 7:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_800</key>
-      <value>GMT + 8:00 Hours</value>
+      <value>GMT + 8:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_900</key>
-      <value>GMT + 9:00 Hours</value>
+      <value>GMT + 9:00 Ore</value>
     </bit>
     <bit>
       <key>gmt_p_950</key>
-      <value>GMT + 9:30 Hours</value>
+      <value>GMT + 9:30 Ore</value>
     </bit>
     <bit>
       <key>guest</key>
-      <value>Guest</value>
+      <value>Visitatore</value>
     </bit>
     <bit>
       <key>home</key>
@@ -8792,7 +8808,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>in_progress</key>
-      <value>In Progress</value>
+      <value>In lavorazione</value>
     </bit>
     <bit>
       <key>kb</key>
@@ -8800,11 +8816,11 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>knowledge_base</key>
-      <value>Knowledge Base</value>
+      <value>Documentazione</value>
     </bit>
     <bit>
       <key>less_than_a_minute_ago</key>
-      <value>Less than a minute ago</value>
+      <value>Meno di un minuto fa</value>
     </bit>
     <bit>
       <key>log_in</key>
@@ -8824,19 +8840,19 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>minutes_ago</key>
-      <value>Minutes Ago</value>
+      <value>Minuti fa</value>
     </bit>
     <bit>
       <key>most_popular_articles</key>
-      <value>Most Popular Articles</value>
+      <value>I pi&#xF9; popolari Articoli</value>
     </bit>
     <bit>
       <key>my_account</key>
-      <value>My Account</value>
+      <value>Il mio account</value>
     </bit>
     <bit>
       <key>news</key>
-      <value>News</value>
+      <value>Notizie</value>
     </bit>
     <bit>
       <key>no</key>
@@ -8844,15 +8860,15 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>no_tickets_login</key>
-      <value>Please login to view your tickets.</value>
+      <value>Per piacere fai il login per vedere i tuoi ticket.</value>
     </bit>
     <bit>
       <key>no_tickets</key>
-      <value>There are no tickets to display.</value>
+      <value>Non ci sono ticket da visualizare.</value>
     </bit>
     <bit>
       <key>no_tickets_short</key>
-      <value>No tickets to display.</value>
+      <value>Nessun ticket da visualizare.</value>
     </bit>
     <bit>
       <key>on_hold</key>
@@ -8864,7 +8880,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>open_ticket</key>
-      <value>Submit A Ticket</value>
+      <value>Inserisci un Ticket</value>
     </bit>
     <bit>
       <key>password</key>
@@ -8872,23 +8888,23 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>print</key>
-      <value>Print</value>
+      <value>Stampa</value>
     </bit>
     <bit>
       <key>priority</key>
-      <value>Priority</value>
+      <value>Priorit&#xE0;</value>
     </bit>
     <bit>
       <key>articles_recent</key>
-      <value>Recently Added Articles</value>
+      <value>Articoli recenti</value>
     </bit>
     <bit>
       <key>articles_top_rated</key>
-      <value>Top Rated Articles</value>
+      <value>Articoli pi&#xF9; graditi</value>
     </bit>
     <bit>
       <key>articles_most_viewed</key>
-      <value>Most Viewed Articles</value>
+      <value>Articoli pi&#xF9; visti</value>
     </bit>
     <bit>
       <key>redirect</key>
@@ -8896,51 +8912,51 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>register</key>
-      <value>Register</value>
+      <value>Registrazione</value>
     </bit>
     <bit>
       <key>remember_me</key>
-      <value>Remember Me</value>
+      <value>Ricordati di me</value>
     </bit>
     <bit>
       <key>resend_val</key>
-      <value>Resend Validation</value>
+      <value>Riinvia Validazione</value>
     </bit>
     <bit>
       <key>search</key>
-      <value>Search</value>
+      <value>Ricerca</value>
     </bit>
     <bit>
       <key>search_button</key>
-      <value>Search</value>
+      <value>Cerca</value>
     </bit>
     <bit>
       <key>status</key>
-      <value>Status</value>
+      <value>Stato</value>
     </bit>
     <bit>
       <key>subject</key>
-      <value>Subject</value>
+      <value>Oggetto</value>
     </bit>
     <bit>
       <key>submitted</key>
-      <value>Submitted</value>
+      <value>Inviati</value>
     </bit>
     <bit>
       <key>ticket_history</key>
-      <value>Ticket History</value>
+      <value>Vecchi Ticket</value>
     </bit>
     <bit>
       <key>tickets_overview</key>
-      <value>Tickets Overview</value>
+      <value>Panoramica dei Ticket</value>
     </bit>
     <bit>
       <key>tickets</key>
-      <value>Tickets</value>
+      <value>Ticket</value>
     </bit>
     <bit>
       <key>today</key>
-      <value>Today</value>
+      <value>Oggi</value>
     </bit>
     <bit>
       <key>trellis_desk</key>
@@ -8956,27 +8972,27 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>weeks_ago</key>
-      <value>Weeks Ago</value>
+      <value>Settimane fa</value>
     </bit>
     <bit>
       <key>months_ago</key>
-      <value>Months Ago</value>
+      <value>Mesi fa</value>
     </bit>
     <bit>
       <key>welcome</key>
-      <value>Welcome</value>
+      <value>Benvenuto</value>
     </bit>
     <bit>
       <key>yes</key>
-      <value>Yes</value>
+      <value>Si</value>
     </bit>
     <bit>
       <key>yesterday</key>
-      <value>Yesterday</value>
+      <value>Ieri</value>
     </bit>
     <bit>
       <key>your_tickets</key>
-      <value>Your Tickets</value>
+      <value>I tuoi Ticket</value>
     </bit>
     <bit>
       <key>na</key>
@@ -8984,11 +9000,11 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>last_reply</key>
-      <value>Last Reply</value>
+      <value>Ultima Risposta</value>
     </bit>
     <bit>
       <key>dashboard</key>
-      <value>Dashboard</value>
+      <value>Sommario</value>
     </bit>
     <bit>
       <key>guest_tag</key>
@@ -9000,7 +9016,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>read_on</key>
-      <value>Click to read...</value>
+      <value>Premi per leggere...</value>
     </bit>
     <bit>
       <key>no_excerpt</key>
@@ -9008,7 +9024,7 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>pagination</key>
-      <value>Page %d of %d</value>
+      <value>Pagina %d di %d</value>
     </bit>
     <bit>
       <key>browse</key>
@@ -9482,7 +9498,7 @@ You have received this email because you selected to receive email notifications
   <file name="lang_tickets.php">
     <bit>
       <key>article_suggestions</key>
-      <value>Articles Suggestions</value>
+      <value>Articoli Suggeriti</value>
     </bit>
     <bit>
       <key>attachment</key>
@@ -9502,47 +9518,47 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>close</key>
-      <value>Close</value>
+      <value>Chiuso</value>
     </bit>
     <bit>
       <key>close_msg_a</key>
-      <value>This ticket was closed by</value>
+      <value>Il ticket &#xE8; stato chiuso da</value>
     </bit>
     <bit>
       <key>close_msg_b</key>
-      <value>for the following reason.</value>
+      <value>per la seguente ragione.</value>
     </bit>
     <bit>
       <key>close_ticket</key>
-      <value>Close Ticket</value>
+      <value>Chiudi Ticket</value>
     </bit>
     <bit>
       <key>close_ticket_button</key>
-      <value>Close Ticket</value>
+      <value>Chiudi Ticket</value>
     </bit>
     <bit>
       <key>closing_ticket</key>
-      <value>Closing Ticket</value>
+      <value>Chiusura Ticket</value>
     </bit>
     <bit>
       <key>confirm_close</key>
-      <value>Are you sure you want to close this ticket?</value>
+      <value>Sei sicuro di voler chiudere queto ticket?</value>
     </bit>
     <bit>
       <key>confirm_reopen</key>
-      <value>Are you sure you want to reopen this ticket?</value>
+      <value>Sei sicuro di voler riaprire questo ticket?</value>
     </bit>
     <bit>
       <key>confirm_delete_reply</key>
-      <value>Are you sure you want to delete this reply?</value>
+      <value>Sei sicuro di voler cancellare questa risposta?</value>
     </bit>
     <bit>
       <key>confirm_escalate</key>
-      <value>Are you sure you want to escalate this ticket?</value>
+      <value>Sei sicuro di voler aumentare il ticket?</value>
     </bit>
     <bit>
       <key>continue_ticket_submit</key>
-      <value>Continue With Ticket Submission</value>
+      <value>Continuare con l'invio del Ticket</value>
     </bit>
     <bit>
       <key>download_attachment</key>
@@ -9550,23 +9566,23 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>edit</key>
-      <value>Edit</value>
+      <value>Modifica</value>
     </bit>
     <bit>
       <key>edit_reply</key>
-      <value>Edit Reply</value>
+      <value>Modifica risposta</value>
     </bit>
     <bit>
       <key>edit_reply_button</key>
-      <value>Edit Reply</value>
+      <value>Modifica risposta</value>
     </bit>
     <bit>
       <key>edit_ticket</key>
-      <value>Edit Ticket</value>
+      <value>Modifica Ticket</value>
     </bit>
     <bit>
       <key>edit_ticket_button</key>
-      <value>Edit Ticket</value>
+      <value>Modifica Ticket</value>
     </bit>
     <bit>
       <key>email</key>
@@ -9574,11 +9590,11 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>email_address</key>
-      <value>Email Address</value>
+      <value>Indirizzo Email</value>
     </bit>
     <bit>
       <key>enter_close_reason</key>
-      <value>Please enter a reason for closing this ticket.</value>
+      <value>Si prega di inserire un motivo per la chiusura di questo ticket.</value>
     </bit>
     <bit>
       <key>err_captcha_mismatch</key>
@@ -9586,11 +9602,11 @@ You have received this email because you selected to receive email notifications
     </bit>
     <bit>
       <key>err_email_in_use</key>
-      <value>That email is already in use by one of our users. Please use another email or login.</value>
+      <value>L'indirizzo di posta elettronica &#xE8; gi&#xE0; in uso da parte di uno dei nostri utenti. Si prega di utilizzare un altro indirizzo email o effettua il login.</value>
     </bit>
     <bit>
       <key>err_no_cdfield</key>
-      <value>Please enter a value for the field:</value>
+      <value>Si prega di inserire un valore per il campo:</value>
     </bit>
     <bit>
       <key>err_no_depart</key>
