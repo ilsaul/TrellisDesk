@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<language key="en" name="English" version="20014000" exported="1366176693">
+<language key="it" name="Italiano" version="20130831" exported="1366176693">
   <file name="ad_lang_articles.php">
     <bit>
       <key>articles_list</key>
@@ -3505,51 +3505,51 @@
   <file name="ad_lang_home.php">
     <bit>
       <key>button_save_notes</key>
-      <value>Save Notepad</value>
+      <value>Salva le Note</value>
     </bit>
     <bit>
       <key>alert_install_locked</key>
-      <value>Your &lt;i&gt;install&lt;/i&gt; directory still exists.  While the installer is locked, we recommend deleting or renaming the &lt;i&gt;install&lt;/i&gt; directory for added security.</value>
+      <value>La tua directory di &lt;i&gt;installazione&lt;/i&gt; &egrave; ancora presente. Anche se l\'installazione &egrave; bloccata, raccomandiamo di cancellare o rinominare la directory di &lt;i&gt;installazione&lt;/i&gt; per aumentare la sicurezza.</value>
     </bit>
     <bit>
       <key>alert_install_dir_exists</key>
-      <value>Your &lt;i&gt;install&lt;/i&gt; directory still exists.  We strongly recommend deleting or renaming this directory for added security.</value>
+      <value>La tua directory di &lt;i&gt;installazione&lt;/i&gt; &egrave; ancora presente. Raccomandiamo caldamente di cancellare o rinominare la directory di &lt;i&gt;installazione&lt;/i&gt; per aumentare la sicurezza.</value>
     </bit>
     <bit>
       <key>system_status</key>
-      <value>System Status</value>
+      <value>Stato del Sistema</value>
     </bit>
     <bit>
       <key>product_version</key>
-      <value>Product Version</value>
+      <value>Versione del prodotto</value>
     </bit>
     <bit>
       <key>php_version</key>
-      <value>PHP Version</value>
+      <value>Versione di PHP</value>
     </bit>
     <bit>
       <key>mysql_version</key>
-      <value>MySQL Version</value>
+      <value>Versione di MySQL</value>
     </bit>
     <bit>
       <key>version_check</key>
-      <value>Version Check</value>
+      <value>Ultimo controllo della versione</value>
     </bit>
     <bit>
       <key>admin_notepad</key>
-      <value>Admin Notepad</value>
+      <value>Note dell\'amministratore</value>
     </bit>
     <bit>
       <key>common_acp_sections</key>
-      <value>Common ACP Sections</value>
+      <value>Sezioni principali del ACP</value>
     </bit>
     <bit>
       <key>recent_tickets</key>
-      <value>Recent Tickets</value>
+      <value>Ticket recenti</value>
     </bit>
     <bit>
       <key>recent_acp_actions</key>
-      <value>Recent ACP Actions</value>
+      <value>Recenti azioni in ACP</value>
     </bit>
     <bit>
       <key>skins</key>
@@ -3557,27 +3557,27 @@
     </bit>
     <bit>
       <key>settings</key>
-      <value>Settings</value>
+      <value>Impostazioni</value>
     </bit>
     <bit>
       <key>languages</key>
-      <value>Languages</value>
+      <value>Lingue</value>
     </bit>
     <bit>
       <key>users</key>
-      <value>Users</value>
+      <value>Utenti</value>
     </bit>
     <bit>
       <key>kb_articles</key>
-      <value>KB Articles</value>
+      <value>Documenti</value>
     </bit>
     <bit>
       <key>documentation</key>
-      <value>Documentation</value>
+      <value>Documentazione Prodotto</value>
     </bit>
     <bit>
       <key>check_now</key>
-      <value>Check Now</value>
+      <value>Controlla Adesso</value>
     </bit>
   </file>
   <file name="ad_lang_languages.php">
