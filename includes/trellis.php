@@ -885,27 +885,45 @@ class trellis {
         }
 
         $db_array = array(
-                          'uid'                => $this->user['id'],
-                          'action'            => $action,
+                          'uid'             => $this->user['id'],
+                          'action'          => $action,
                           'type'            => $params['type'],
-                          'level'            => $params['level'],
+                          'level'           => $params['level'],
                           'content_type'    => $params['content_type'],
-                          'content_id'        => $params['content_id'],
-                          'admin'            => ( ( IN_TDA === true ) ? 1 : 0 ),
+                          'content_id'      => $params['content_id'],
+                          'admin'           => ( ( IN_TDA === true ) ? 1 : 0 ),
                           'date'            => time(),
-                          'ipadd'            => $this->input['ip_address'],
+                          'ipadd'           => $this->input['ip_address'],
                          );
 
         if ( $params['extra'] ) $db_array['extra'] = serialize( $params['extra'] );
         if ( $params['uid'] ) $db_array['uid'] = $params['uid'];
 
         $this->db->construct( array(
-                                            'insert'    => 'logs',
-                                          'set'        => $db_array,
-                                     )      );
+                                        'insert'    => 'logs',
+                                        'set'       => $db_array,
+                                    ));
 
         $this->db->next_shutdown();
         $this->db->execute();
+    }
+    
+    #=======================================
+    # @ Log Simple
+    # Log an action into the database.
+    #=======================================
+
+    function logSimple($type, $msg, $level = NULL, $content_id = NULL)
+    {
+    	// This is for the log entry that have problem now
+        $params = array( 'msg' => $msg, 'type' => $type, 'content_type' => '', 'content_id' => 0 );
+        
+        if ( isset( $level ) ) $params['level'] = $level;
+        
+        if ( isset( $user ) ) $params['content_id'] = $content_id;
+        
+        $this->log($params);
+        
     }
 
     #=======================================

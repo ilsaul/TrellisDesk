@@ -95,7 +95,7 @@ class td_func_users {
     }
 
     #=======================================
-    # @ Get User
+    # @ Get User Staff
     #=======================================
 
     public function get_staff($input)

@@ -80,7 +80,7 @@ if ( $fd = @fopen( "php://stdin", 'r' ) )
 }
 else
 {
-    $trellis->log( 'error', "Unable to Open Connection to Stdin" );
+    $trellis->logSimple( 'error', "Unable to Open Connection to Stdin" );
 
     exit();
 }
@@ -322,7 +322,7 @@ $trellis->core->db->execute();
 
 if ( ! $trellis->core->db->get_num_rows() )
 {
-    $trellis->log( 'error', "Department Not Found Email: ". $email['to'] );
+    $trellis->logSimple( 'error', "Department Not Found Email: ". $email['to'] );
 
     exit();
 }
@@ -364,7 +364,7 @@ else
             $trellis->send_guest_email( $email['from'], 'ticket_pipe_rejected', $replace, array( 'from_email' => $d['incoming_email'] ) );
         }
 
-        $trellis->log( 'security', "Guest Piping Not Allowed: ". $d['name'] );
+        $trellis->logSimple( 'security', "Guest Piping Not Allowed: ". $d['name'] );
 
         exit();
     }
@@ -426,7 +426,7 @@ if ( $ticket_found )
             $trellis->send_guest_email( $email['from'], 'reply_pipe_rejected', $replace, array( 'from_email' => $d['incoming_email'] ) );
         }
 
-        $trellis->log( 'error', "Reply Rejected Ticket Closed &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $trellis->logSimple( 'error', "Reply Rejected Ticket Closed &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
 
         exit();
     }
@@ -459,8 +459,8 @@ if ( $ticket_found )
 
     $reply_id = $trellis->core->db->get_insert_id();
 
-    $trellis->log( 'user', "Ticket Reply &#039;". $t['subject'] ."&#039;", 1, $reply_id );
-    $trellis->log( 'ticket', "Ticket Reply &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+    $trellis->logSimple( 'user', "Ticket Reply &#039;". $t['subject'] ."&#039;", 1, $reply_id );
+    $trellis->logSimple( 'ticket', "Ticket Reply &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
 
     #=============================
     # Email Staff
@@ -610,7 +610,7 @@ else
             $trellis->send_guest_email( $email['from'], 'ticket_pipe_rejected', $replace, array( 'from_email' => $d['incoming_email'] ) );
         }
 
-        $trellis->log( 'security', "New Ticket to &#039;". $d['name'] ."&#039; Denied", 1, $d['id'] );
+        $trellis->logSimple( 'security', "New Ticket to &#039;". $d['name'] ."&#039; Denied", 1, $d['id'] );
 
         exit();
     }
@@ -654,8 +654,8 @@ else
 
     $ticket_id = $trellis->core->db->get_insert_id();
 
-    $trellis->log( 'user', "Ticket Created &#039;". $email['subject'] ."&#039;", 1, $ticket_id );
-    $trellis->log( 'ticket', "Ticket Created &#039;". $email['subject'] ."&#039;", 1, $ticket_id );
+    $trellis->logSimple( 'user', "Ticket Created &#039;". $email['subject'] ."&#039;", 1, $ticket_id );
+    $trellis->logSimple( 'ticket', "Ticket Created &#039;". $email['subject'] ."&#039;", 1, $ticket_id );
 
     #=============================
     # Update User

@@ -223,7 +223,7 @@ class td_source_register {
 		 $user_id = $this->trellis->func->users->add( $db_array );
 		}
 
-        $this->trellis->log( 'user', "User Added &#039;". $this->trellis->input['name'] ."&#039;", 1, $user_id );
+        $this->trellis->logSimple( 'user', "User Added &#039;". $this->trellis->input['name'] ."&#039;", 1, $user_id );
 
         #=============================
         # Redirect

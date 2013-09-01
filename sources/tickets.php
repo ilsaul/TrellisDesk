@@ -25,7 +25,7 @@ class td_source_tickets {
         {
             if ( $this->trellis->user['id'] )
             {
-                $this->trellis->log( 'security', "Blocked Access Ticket Center" );
+                $this->trellis->logSimple( 'security', "Blocked Access Ticket Center" );
 
                 $this->trellis->skin->error('banned_ticket');
             }
@@ -34,19 +34,8 @@ class td_source_tickets {
         # TODO: Guest Support
         if ( ! $this->trellis->user['id'] )
         {	
-        	 //MC 20130828 - Bug.ID: #1 - Incorrect integer value: 's' for column 'uid' at row 1, 256) called at [/Users/moreno/Sites/tre/includes/classes/class_mysql.php:79]
-        	 $log_array = array(
-        	              //'uid'              => 0,
-                          'msg'              => 'Blocked Guest Access Ticket Center', //'no_guest_ticket_center',
-                          'type'             => 'security',
-                          'level'            => 1,
-                          'content_type'     => '',
-                          'content_id'       => 0,
-                         // 'extra'            => '',
-                         );
-                    
-            //$this->trellis->log( 'security', "Blocked Guest Access Ticket Center" );
-            $this->trellis->log($log_array);
+        	//MC 20130828 - Bug.ID: #1 - Incorrect integer value: 's' for column 'uid' at row 1, 256) called at [/Users/moreno/Sites/tre/includes/classes/class_mysql.php:79]                    
+            $this->trellis->logSimple( 'security', "Blocked Guest Access Ticket Center" );
 
             $this->trellis->skin->error( 'must_be_user', 1 );
         }
@@ -685,8 +674,8 @@ class td_source_tickets {
 
         if ( $fdata ) $this->trellis->func->cdfields->set_data( $fdata, $ticket['id'], 1 );
 
-        $this->trellis->log( 'user', "Ticket Created &#039;". $this->trellis->input['subject'] ."&#039;", 1, $ticket['id'] );
-        $this->trellis->log( 'ticket', "Ticket Created &#039;". $this->trellis->input['subject'] ."&#039;", 1, $ticket['id'] );
+        $this->trellis->logSimple( 'user', "Ticket Created &#039;". $this->trellis->input['subject'] ."&#039;", 1, $ticket['id'] );
+        $this->trellis->logSimple( 'ticket', "Ticket Created &#039;". $this->trellis->input['subject'] ."&#039;", 1, $ticket['id'] );
 
         #=============================
         # Do Output
@@ -738,8 +727,8 @@ class td_source_tickets {
 
         $reply_id = $this->trellis->func->tickets->add_reply( $db_array, $t['id'], array( 'aua' => $t['aua'] ) );
 
-        $this->trellis->log( 'user', "Ticket Reply Added &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
-        $this->trellis->log( 'ticket', "Ticket Reply Added &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'user', "Ticket Reply Added &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'ticket', "Ticket Reply Added &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
 
         #=============================
         # Do Output
@@ -776,8 +765,8 @@ class td_source_tickets {
 
         $this->trellis->func->tickets->escalate( $t['id'], array( 'did' => $t['did'], 'staff' => 0, 'data' => $t ) );
 
-        $this->trellis->log( 'user', "Ticket Escalated &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
-        $this->trellis->log( 'ticket', "Ticket Escalated &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'user', "Ticket Escalated &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'ticket', "Ticket Escalated &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
 
         #=============================
         # Do Output
@@ -812,8 +801,8 @@ class td_source_tickets {
 
         $this->trellis->func->tickets->close( $t['id'], array( 'uid' => $t['uid'], 'allow_reopen' => 1, 'data' => $t ) );
 
-        $this->trellis->log( 'user', "Ticket Closed &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
-        $this->trellis->log( 'ticket', "Ticket Closed &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'user', "Ticket Closed &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'ticket', "Ticket Closed &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
 
         #=============================
         # Do Output
@@ -848,8 +837,8 @@ class td_source_tickets {
 
         $this->trellis->func->tickets->reopen( $t['id'], array( 'uid' => $t['uid'], 'did' => $t['did'], 'staff' => 0, 'data' => $t ) );
 
-        $this->trellis->log( 'other', "Ticket Reopened &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
-        $this->trellis->log( 'ticket', "Ticket Reopened &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'other', "Ticket Reopened &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
+        $this->trellis->logSimple( 'ticket', "Ticket Reopened &#039;". $t['subject'] ."&#039;", 1, $t['id'] );
 
         #=============================
         # Do Output
@@ -870,7 +859,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->user['g_reply_edit'] )
         {
-            $this->trellis->log( 'security', "Blocked Ticket Reply Edit Attempt" );
+            $this->trellis->logSimple( 'security', "Blocked Ticket Reply Edit Attempt" );
 
             $this->trellis->skin->error('no_perm_reply_edit');
         }
@@ -889,7 +878,7 @@ class td_source_tickets {
 
         if ( ! $r )
         {
-            $this->trellis->log( 'error', "Reply Not Found ID: ". $this->trellis->input['id'] );
+            $this->trellis->logSimple( 'error', "Reply Not Found ID: ". $this->trellis->input['id'] );
 
             $this->trellis->skin->error('no_reply');
         }
@@ -975,8 +964,8 @@ class td_source_tickets {
 
         $this->trellis->func->tickets->edit( array( 'message' => $this->trellis->input['message'] ), $t['id'] );
 
-        $this->trellis->log( 'user', "Edited Ticket ID #". $t['id'], 1, $t['id'] );
-        $this->trellis->log( 'ticket', "Edited Ticket ID #". $t['id'], 1, $t['tid'] );
+        $this->trellis->logSimple( 'user', "Edited Ticket ID #". $t['id'], 1, $t['id'] );
+        $this->trellis->logSimple( 'ticket', "Edited Ticket ID #". $t['id'], 1, $t['tid'] );
 
         #=============================
         # Do Output
@@ -1002,7 +991,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->user['g_reply_edit'] )
         {
-            $this->trellis->log( 'security', "Blocked Ticket Reply Edit Attempt" );
+            $this->trellis->logSimple( 'security', "Blocked Ticket Reply Edit Attempt" );
 
             $this->trellis->skin->error('no_perm_reply_edit');
         }
@@ -1021,7 +1010,7 @@ class td_source_tickets {
 
         if ( ! $r )
         {
-            $this->trellis->log( 'error', "Reply Not Found ID: ". $this->trellis->input['id'] );
+            $this->trellis->logSimple( 'error', "Reply Not Found ID: ". $this->trellis->input['id'] );
 
             $this->trellis->skin->error('no_reply');
         }
@@ -1032,8 +1021,8 @@ class td_source_tickets {
 
         $this->trellis->func->tickets->edit_reply( array( 'message' => $this->trellis->input['message'] ), $r['id'] );
 
-        $this->trellis->log( 'user', "Edited Ticket Reply ID #". $r['id'], 1, $r['id'] );
-        $this->trellis->log( 'ticket', "Edited Ticket Reply ID #". $r['id'], 1, $r['tid'] );
+        $this->trellis->logSimple( 'user', "Edited Ticket Reply ID #". $r['id'], 1, $r['id'] );
+        $this->trellis->logSimple( 'ticket', "Edited Ticket Reply ID #". $r['id'], 1, $r['tid'] );
 
         #=============================
         # Do Output
@@ -1074,8 +1063,8 @@ class td_source_tickets {
 
         $this->trellis->func->tickets->delete_reply( $r['id'], array( 'tid' => $r['tid'], 'date' => $r['date'], 'last_reply' => $r['last_reply'], 'staff' => 0 ) );
 
-        $this->trellis->log( 'other', "Ticket Reply Deleted &#039;". $r['subject'] ."&#039;", 2, $r['tid'] );
-        $this->trellis->log( 'ticket', "Ticket Reply Deleted &#039;". $r['subject'] ."&#039;", 2, $r['tid'] );
+        $this->trellis->logSimple( 'other', "Ticket Reply Deleted &#039;". $r['subject'] ."&#039;", 2, $r['tid'] );
+        $this->trellis->logSimple( 'ticket', "Ticket Reply Deleted &#039;". $r['subject'] ."&#039;", 2, $r['tid'] );
 
         #=============================
         # Do Output
@@ -1112,7 +1101,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->user['g_reply_rate'] || $this->trellis->user['ban_ticket_rate'] )
         {
-            $this->trellis->log( 'security', "Blocked Reply Rating" );
+            $this->trellis->logSimple( 'security', "Blocked Reply Rating" );
 
             $this->trellis->skin->error('banned_ticket_rate');
         }
@@ -1128,7 +1117,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->db->get_num_rows() )
         {
-            $this->trellis->log( 'error', "Ticket Not Found ID: ". $this->trellis->input['id'] );
+            $this->trellis->logSimple( 'error', "Ticket Not Found ID: ". $this->trellis->input['id'] );
 
             $this->trellis->skin->error('no_ticket');
         }
@@ -1146,7 +1135,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->db->get_num_rows() )
         {
-            $this->trellis->log( 'error', "Reply Not Found ID: ". $this->trellis->input['rid'] );
+            $this->trellis->logSimple( 'error', "Reply Not Found ID: ". $this->trellis->input['rid'] );
 
             $this->trellis->skin->error('no_reply');
         }
@@ -1155,7 +1144,7 @@ class td_source_tickets {
 
         if ( ! $r['staff'] )
         {
-            $this->trellis->log( 'security', "Reply Rating Blocked Not Staff &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
+            $this->trellis->logSimple( 'security', "Reply Rating Blocked Not Staff &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
 
             $this->trellis->skin->error('no_staff_rate_reply');
         }
@@ -1171,7 +1160,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->db->get_num_rows() )
         {
-            $this->trellis->log( 'error', "User Not Found ID: ". $r['uid'] );
+            $this->trellis->logSimple( 'error', "User Not Found ID: ". $r['uid'] );
 
             $this->trellis->skin->error('no_user');
         }
@@ -1180,7 +1169,7 @@ class td_source_tickets {
 
         if ( ! $this->trellis->user['id'] )
         {
-            $this->trellis->log( 'security', "Reply Rating Blocked From Guest &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
+            $this->trellis->logSimple( 'security', "Reply Rating Blocked From Guest &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
 
             $this->trellis->skin->error( 'must_be_user', 1 );
         }
@@ -1189,7 +1178,7 @@ class td_source_tickets {
 
         if ( ! in_array( $this->trellis->input['amount'], $allowed_ratings ) )
         {
-            $this->trellis->log( 'security', "Invalid Reply Rating Amount &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
+            $this->trellis->logSimple( 'security', "Invalid Reply Rating Amount &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
 
             $this->trellis->skin->error('invalid_rate_value_reply');
         }
@@ -1205,7 +1194,7 @@ class td_source_tickets {
 
         if ( $this->trellis->db->get_num_rows() )
         {
-            $this->trellis->log( 'security', "Already Rated Reply By User &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
+            $this->trellis->logSimple( 'security', "Already Rated Reply By User &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
 
             $this->trellis->skin->error('already_rated_reply');
         }
@@ -1230,7 +1219,7 @@ class td_source_tickets {
 
         $this->trellis->db->execute();
 
-        $this->trellis->log( 'user', "Reply Rating Value ". $this->trellis->input['amount'] ." Added &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
+        $this->trellis->logSimple( 'user', "Reply Rating Value ". $this->trellis->input['amount'] ." Added &#039;". $t['subject'] ."&#039;", 1, $r['id'] );
 
         #=============================
         # Update Ticket Rating
@@ -1380,7 +1369,7 @@ class td_source_tickets {
         {
             $this->trellis->skin->error('no_attachment');
 
-            $this->trellis->log( 'error', "Attachment File Not Found ID #". $a['id'], 2, $a['id'] );
+            $this->trellis->logSimple( 'error', "Attachment File Not Found ID #". $a['id'], 2, $a['id'] );
         }
 
         #=============================

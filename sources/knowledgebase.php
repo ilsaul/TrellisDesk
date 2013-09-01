@@ -23,7 +23,7 @@ class td_source_knowledgebase {
 
         if ( ! $this->trellis->user['g_kb_access'] )
         {
-            $this->trellis->log( 'security', "Blocked Access Knowledge Base" );
+            $this->trellis->logSimple( 'security', "Blocked Access Knowledge Base" );
 
             $this->trellis->skin->error('no_perm');
         }
@@ -206,7 +206,7 @@ class td_source_knowledgebase {
 
         if ( ! $a = $this->trellis->func->articles->get_single_by_id( array( 'id', 'cid', 'title', 'description', 'content', 'rating_average', 'votes', 'views', 'comments', 'html', 'date', 'modified', 'allow_comments', 'allow_rating' ), $this->trellis->input['id'] ) )
         {
-            $this->trellis->log( 'error', "Article Not Found ID: ". $this->trellis->input['id'] );
+            $this->trellis->logSimple( 'error', "Article Not Found ID: ". $this->trellis->input['id'] );
 
             $this->trellis->skin->error('no_article');
         }
@@ -474,7 +474,7 @@ class td_source_knowledgebase {
 
         $this->trellis->func->articles->edit_comment( array( 'message' => $this->trellis->input['message'] ), $c['id'] );
 
-        $this->trellis->log( 'user', "Article Comment Edited ID #". $c['id'], 1, $c['id'] );
+        $this->trellis->logSimple( 'user', "Article Comment Edited ID #". $c['id'], 1, $c['id'] );
 
         #=============================
         # Do Output
@@ -511,7 +511,7 @@ class td_source_knowledgebase {
 
         $this->trellis->func->articles->delete_comment( $c['id'], array( 'aid' => $c['aid'] ) );
 
-        $this->trellis->log( 'user', "Article Comment Deleted ID #". $c['id'], 2, $c['id'] );
+        $this->trellis->logSimple( 'user', "Article Comment Deleted ID #". $c['id'], 2, $c['id'] );
 
         #=============================
         # Do Output
@@ -540,7 +540,7 @@ class td_source_knowledgebase {
 
         if ( ! $this->trellis->user['id'] )
         {
-            $this->trellis->log( 'security', "Article Rating Blocked From Guest &#039;". $a['name'] ."&#039;", 1, $a['id'] );
+            $this->trellis->logSimple( 'security', "Article Rating Blocked From Guest &#039;". $a['name'] ."&#039;", 1, $a['id'] );
 
             $this->trellis->skin->error( 'must_be_user', 1 );
         }
@@ -549,7 +549,7 @@ class td_source_knowledgebase {
 
         if ( $this->trellis->input['amount'] && ! in_array( $this->trellis->input['amount'], $allowed_ratings ) )
         {
-            $this->trellis->log( 'security', "Invalid Article Rating Amount &#039;". $a['name'] ."&#039;", 1, $a['id'] );
+            $this->trellis->logSimple( 'security', "Invalid Article Rating Amount &#039;". $a['name'] ."&#039;", 1, $a['id'] );
 
             $this->trellis->skin->error('invalid_rate_value');
         }
@@ -566,7 +566,7 @@ class td_source_knowledgebase {
             {
                 $this->trellis->func->articles->delete_rating( $r['id'], array( 'aid' => $a['id'], 'rating_total' => $a['rating_total'], 'votes' => $a['votes'], 'amount_old' => $r['rating'] ) );
 
-                $this->trellis->log( 'user', "Article Rating Value ". $r['rating'] ." Deleted &#039;". $a['name'] ."&#039;", 1, $a['id'] );
+                $this->trellis->logSimple( 'user', "Article Rating Value ". $r['rating'] ." Deleted &#039;". $a['name'] ."&#039;", 1, $a['id'] );
 
                 $msg = array( 'error' => 'rating_deleted' );
             }
@@ -574,7 +574,7 @@ class td_source_knowledgebase {
             {
                 $this->trellis->func->articles->edit_rating( $this->trellis->input['amount'], $r['id'], array( 'aid' => $a['id'], 'rating_total' => $a['rating_total'], 'votes' => $a['votes'], 'amount_old' => $r['rating'] ) );
 
-                $this->trellis->log( 'user', "Article Rating Value ". $r['rating'] ." to ". $this->trellis->input['amount'] ." Updated &#039;". $a['name'] ."&#039;", 1, $a['id'] );
+                $this->trellis->logSimple( 'user', "Article Rating Value ". $r['rating'] ." to ". $this->trellis->input['amount'] ." Updated &#039;". $a['name'] ."&#039;", 1, $a['id'] );
 
                 $msg = array( 'alert' => 'rating_updated' );
             }
@@ -583,7 +583,7 @@ class td_source_knowledgebase {
         {
             $this->trellis->func->articles->add_rating( $this->trellis->input['amount'], $a['id'], array( 'rating_total' => $a['rating_total'], 'votes' => $a['votes'] ) );
 
-            $this->trellis->log( 'user', "Article Rating Value ". $this->trellis->input['amount'] ." Added &#039;". $a['name'] ."&#039;", 1, $a['id'] );
+            $this->trellis->logSimple( 'user', "Article Rating Value ". $this->trellis->input['amount'] ." Added &#039;". $a['name'] ."&#039;", 1, $a['id'] );
 
             $msg = array( 'alert' => 'rating_added' );
         }
