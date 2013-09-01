@@ -9,7 +9,7 @@
 
 $lang = array(
 
-'my_acp_settings' => 'My ACP Settings',
+'my_acp_settings' => 'Le Mie Impostazioni del ACP',
 'auto_append_sig' => 'Append signature to tickets and replies by default',
 'ticket_preferences' => 'Ticket Preferences',
 'auto_assign' => 'Assign me to tickets I reply to by default',

@@ -8,33 +8,33 @@
 */
 
 $lang['header'] = <<<EOF
-Dear {USER_NAME},
+Egregio {USER_NAME},
 EOF;
 
 $lang['header_html'] = <<<EOF
-&lt;p&gt;Dear {USER_NAME},&lt;/p&gt;
+&lt;p&gt;Egregio {USER_NAME},&lt;/p&gt;
 EOF;
 
 $lang['footer'] = <<<EOF
-Regards,
+Distinti Saluti
 
 
 
-The {TD_NAME} team.
+Il {TD_NAME} gruppo.
 
 {TD_URL}
 EOF;
 
 $lang['footer_html'] = <<<EOF
-&lt;p&gt;Regards,&lt;/p&gt;
+&lt;p&gt;Distinti Saluti&lt;/p&gt;
 
-&lt;p&gt;The {TD_NAME} team.&lt;br /&gt;&lt;a href=&quot;{TD_URL}&quot;&gt;{TD_URL}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il {TD_NAME} gruppo.&lt;br /&gt;&lt;a href=&quot;{TD_URL}&quot;&gt;{TD_URL}&lt;/a&gt;&lt;/p&gt;
 EOF;
 
-$lang['user_new_val_email_sub'] = "Verify Your Email";
+$lang['user_new_val_email_sub'] = "Verifica la tua Email";
 
 $lang['user_new_val_email'] = <<<EOF
-Welcome to {TD_NAME}.  You have created a new user account at our help desk system.  In order to activate your account, you must verify this email address by clicking the verification link below.
+Benvenuto in {TD_NAME}.  Hai creato un nuovo utente nel nostro sistema di help desk.  Per attivare il tuo profilo, devi confermarci la tua email premendo sul collegamento di verifica qui sotto.
 
 
 
@@ -42,7 +42,7 @@ Welcome to {TD_NAME}.  You have created a new user account at our help desk syst
 
 
 
-Verification Link: {LINK}
+Collegamento di Verifica: {LINK}
 
 
 
@@ -50,35 +50,35 @@ Verification Link: {LINK}
 
 
 
-Once you have verified this email address, you will be able to log in.
+Una volta verificato il tuo email, sarai in grado di fare il login.
 EOF;
 
 $lang['user_new_val_email_html'] = <<<EOF
-&lt;p&gt;Welcome to {TD_NAME}.&amp;nbsp; You have created a new user account at our help desk system.&amp;nbsp; In order to activate your account, you must verify this email address by clicking the verification link below.&lt;/p&gt;
+&lt;p&gt;Benvenuto in {TD_NAME}.&amp;nbsp; Hai creato un nuovo utente nel nostro sistema di help desk.&amp;nbsp; Per attivare il tuo profilo, devi confermarci la tua email premendo sul collegamento di verifica qui sotto.&lt;/p&gt;
 
 &lt;p&gt;---------------------------&lt;/p&gt;
 
-&lt;p&gt;Verification Link: &lt;a href=&quot;{LINK}&quot;&gt;{LINK}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Collegamento di Verifica: &lt;a href=&quot;{LINK}&quot;&gt;{LINK}&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;---------------------------&lt;/p&gt;
 
-&lt;p&gt;Once you have verified this email address, you will be able to log in.&lt;/p&gt;
+&lt;p&gt;Una volta verificato il tuo email, sarai in grado di fare il login.&lt;/p&gt;
 EOF;
 
-$lang['user_new_val_admin_sub'] = "New User Account Pending";
+$lang['user_new_val_admin_sub'] = "Nuovo Account Utente in Attesa";
 
 $lang['user_new_val_admin'] = <<<EOF
-Welcome to {TD_NAME}.  You have created a new user account at our help desk system.  Before you can begin using your account, an administrator must manually approve your account.  You will receive an email when your account is approved.
+Benvenuto in {TD_NAME}.  Hai creato un nuovo utente nel nostro sistema di help desk.  Prima di poter accedere con il nuovo profilo, un amministratore deve manualmente approvare la tua registrazione.  Riceverai una email quando la tua registrazione sar&agrave; approvata.
 EOF;
 
 $lang['user_new_val_admin_html'] = <<<EOF
-&lt;p&gt;Welcome to {TD_NAME}.&amp;nbsp; You have created a new user account at our help desk system.&amp;nbsp; Before you can begin using your account, an administrator must manually approve your account.&amp;nbsp; You will receive an email when your account is approved.&lt;/p&gt;
+&lt;p&gt;Benvenuto in {TD_NAME}.&amp;nbsp; Hai creato un nuovo utente nel nostro sistema di help desk.&amp;nbsp; Prima di poter accedere con il nuovo profilo, un amministratore deve manualmente approvare la tua registrazione.&amp;nbsp; Riceverai una email quando la tua registrazione sar&agrave; approvata.&lt;/p&gt;
 EOF;
 
-$lang['user_new_val_admin_staff_sub'] = "New Registration: {UNAME}";
+$lang['user_new_val_admin_staff_sub'] = "Nuova Registrazione: {UNAME}";
 
 $lang['user_new_val_admin_staff'] = <<<EOF
-A new user has registered as is awaiting approval.
+Un nuovo utente si &egrave; registrato e aspetta l'approvazione.
 
 ---------------------------
 
@@ -87,18 +87,18 @@ Email: {UEMAIL}
 
 ---------------------------
 
-You can manage users awaiting approval using this link: {LINK}
+Puoi gestire gli utenti in attesadi approvazione usando il seguente link: {LINK}
 EOF;
 
 $lang['user_new_val_admin_staff_html'] = <<<EOF
-&lt;p&gt;A new user has registered as is awaiting approval.&lt;/p&gt;
+&lt;p&gt;Un nuovo utente si &egrave; registrato e aspetta l'approvazione.&lt;/p&gt;
 &lt;p&gt;---------------------------&lt;/p&gt;
 &lt;p&gt;User: {UNAME}&lt;br /&gt;Email: {UEMAIL}&lt;/p&gt;
 &lt;p&gt;---------------------------&lt;/p&gt;
-&lt;p&gt;You can manage users awaiting approval using this link: &lt;a href=&quot;{LINK}&quot;&gt;{LINK}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Puoi gestire gli utenti in attesadi approvazione usando il seguente link: &lt;a href=&quot;{LINK}&quot;&gt;{LINK}&lt;/a&gt;&lt;/p&gt;
 EOF;
 
-$lang['user_new_val_both_sub'] = "Verify Your Email";
+$lang['user_new_val_both_sub'] = "Verifica la tua Email";
 
 $lang['user_new_val_both'] = <<<EOF
 Welcome to {TD_NAME}.  You have created a new user account at our help desk system.  In order to activate your account, you must verify this email address by clicking the validation link below.  Additionally, an administrator must also manually approve your account.
