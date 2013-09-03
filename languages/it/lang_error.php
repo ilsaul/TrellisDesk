@@ -29,7 +29,7 @@ $lang = array(
 'login_no_user' => 'We could not find a user that matched the username.',
 'logout_no_key' => 'Invalid logout key.',
 'must_be_guest' => 'Sorry, only guests have permission to access this page.',
-'must_be_user' => 'Sorry, you must be logged in to access this page.',
+'must_be_user' => 'Spiacente, devi essere loggato per accedere a questa pagina.',
 'new_tickets_disabled' => 'Sorry, but an administrator has currently disabled new tickets.',
 'news_comments_disabled' => 'Sorry, but commenting has been disabled.',
 'news_disabled' => 'Sorry, but the news page has been disabled.',
@@ -65,7 +65,7 @@ $lang = array(
 'ticket_escalated_already' => 'Sorry, but the ticket has already been escalated.',
 'ticket_no_close_perm' => 'Sorry, you do not have permission to close this ticket.',
 'token_mismatch' => 'Your form token could not be verified.',
-'error_small_print' => 'If you believe this message to be an error, please contact an administrator.',
+'error_small_print' => 'Se ritieni che questo messaggio sia un errore, sei pregato di contattare un amministratore.',
 
 );
 
