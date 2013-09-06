@@ -104,18 +104,20 @@ $lang = array(
 'na' => 'N/A',
 'last_reply' => 'Ultima Risposta',
 'dashboard' => 'Sommario',
-'guest_tag' => '&#40;Guest&#41;',
+'guest_tag' => '&#40;Visitatore&#41;',
 'antispam_captcha' => 'Captcha',
 'read_on' => 'Premi per leggere...',
-'no_excerpt' => 'No excerpt',
+'no_excerpt' => 'Senza eccezione',
 'pagination' => 'Pagina %d di %d',
-'browse' => 'Browse',
+'browse' => 'Sfoglia',
 'attachments' => 'Allegati',
 
-'log_user_edited' => 'User Edited - %s',
-'log_user_signature' => 'User Signature Edited - %s',
-'log_user_email_init' => 'User Email Changed Initiated - %s',
-'log_user_email_completed' => 'User Email Changed Completed - %s',
+'log_user_edited' => 'Modifica utente - %s',
+'log_user_signature' => 'Modifica firma utente - %s',
+'log_user_email_init' => 'Inizio modifica Email utente - %s',
+'log_user_email_completed' => 'Fine modifica Email utente - %s',
+
+'lang_ISO' => 'it_IT',
 
 );
 
