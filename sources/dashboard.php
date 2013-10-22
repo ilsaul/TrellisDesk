@@ -50,6 +50,8 @@ class td_source_dashboard {
         {
             $this->trellis->load_functions('tickets');
 
+            /*if ( $this->trellis->user['id'] || $this->trellis->user['s_tkey'] )
+            {*/
             if ( $this->trellis->user['id'] || $this->trellis->user['s_tkey'] )
             {
                 if ( $this->trellis->user['id'] )
@@ -67,6 +69,7 @@ class td_source_dashboard {
                                                                                      array( 'from' => array( 'p' => 'priorities' ), 'where' => array( 't' => 'priority', '=', 'p' => 'id' ) ),
                                                                                      array( 'from' => array( 's' => 'statuses' ), 'where' => array( 't' => 'status', '=', 's' => 'id' ) ),
                                                                                      ),
+                                                                   //TODO: Saul: Use Settings for filter by user or give to see all
                                                                    'where'    => array( array( 't' => 'uid' ), '=', $this->trellis->user['id'] ),
                                                                    'order'    => array( 'last_reply' => array( 't' => 'desc' ) ),
                                                                    'limit'    => array( 0, 8 ),
